@@ -40,7 +40,7 @@ Id:5,
 Image: "https://jesusthegoodshepherd.org/wp-content/uploads/nophoto-female-150x150.png",
 Name: "Rowell Reyes - Bookkeeper",
 Contact: "856.461.0100 ext. 207",
-Email: ".reyes@jesusthegoodshepherd.org"
+Email: "r.reyes@jesusthegoodshepherd.org"
 },
 
 {
@@ -76,24 +76,35 @@ Name: "Joel Malabuyoc - Maintenance/Cemetery",
 
 const Staff = () => {
     return ( 
-    <div class="p-4 max-w-5xl mx-auto grid gap-5 xs:grid-cols-2 md:grid-cols-4 ">
+    <div class="flex flex-col my-6 w-80 mx-auto font-Alice lg:flex-row justify-around lg:w-full">         
+        <div class="mt-6">
+            <ul class="leading-8">
+                <li>Directions</li>
+                <li>Current Bulletin</li>
+                <li>Archived Bulletins</li>
+                <li>Staff</li>
+                <li>Parish History</li>
+                <li>St Peters Cemetery</li>
+            </ul>
+        </div>
+        <div>
 
         {
             staffData.map((staff,index) => {
                 return (
                     <Card 
-                    key={staff.Id}
+                    key = {staff.Id}
                     source = {staff.Image}
                     title = {staff.Name}
                     telephone = {staff.Contact}
-                    email= {staff.Email}/>
+                    email = {staff.Email}/>
 
                 )                
 
             })
         }
 
-
+    </div>
     </div> 
     );
 }
