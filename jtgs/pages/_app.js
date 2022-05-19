@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Head from 'next/head'
+import Layout from "../components/Layout";
 
 const MyApp = ({ Component, pageProps }) => {
 
@@ -9,7 +10,10 @@ return <>
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 </style> */}
 </Head>
-<Component {...pageProps} />;
+<Layout>
+    <Component {...pageProps} />
+</Layout>
+
 </>
 };
 export default MyApp;

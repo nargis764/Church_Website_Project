@@ -11,6 +11,7 @@ return (
         <div>
                 <Image class="rounded mt-6 shadow" 
                 src = {source} 
+                //loader function generates the URL for the image by appending a root domain to the provided source
                 loader={() => source}                
                 alt=""
                 width={320} height={240}

@@ -76,9 +76,9 @@ Name: "Joel Malabuyoc - Maintenance/Cemetery",
 
 const Staff = () => {
     return ( 
-    <div class="flex flex-col my-6 w-80 mx-auto font-Alice lg:flex-row justify-around lg:w-full">         
-        <div class="mt-6">
-            <ul class="leading-8">
+    <div className="flex flex-col my-6 w-80 mx-auto font-Alice lg:flex-row justify-around lg:w-full">         
+        <div className="mt-6">
+            <ul className="leading-8">
                 <li>Directions</li>
                 <li>Current Bulletin</li>
                 <li>Archived Bulletins</li>
