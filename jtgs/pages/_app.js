@@ -10,11 +10,9 @@ import Layout from "../components/Layout";
 const MyApp = ({ Component, pageProps }) => {
 
 return <>
-{/* <Head> */}
-    {/* <style>
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
-</style> */}
-{/* </Head> */}
+{/* <Head>
+    
+</Head> */}
 <Layout>
     <Component {...pageProps} />
 </Layout>

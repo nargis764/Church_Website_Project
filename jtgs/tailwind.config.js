@@ -9,7 +9,11 @@ theme: {
   },
 },
 variants: {
-  extend: {},
+
+  extend: {
+    display: ['group-hover', 'hover', 'group-focus'],
+    backgroundColor: ['group-hover', 'hover', 'group-focus', 'responsive', 'active', 'focus', 'focus-within'],
+  },
 },
 plugins: [],
 };
