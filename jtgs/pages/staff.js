@@ -1,5 +1,5 @@
 import Card from "../components/Card.js";
-import { staffData } from "../components/StaffData.js";
+import { staffData } from "../components/staff-data.js";
 
 
 

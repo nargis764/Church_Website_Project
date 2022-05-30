@@ -12,8 +12,12 @@ variants: {
 
   extend: {
     display: ['group-hover', 'hover', 'group-focus'],
-    backgroundColor: ['group-hover', 'hover', 'group-focus', 'responsive', 'active', 'focus', 'focus-within'],
+    backgroundColor: [ 'hover','group-hover', 'group-focus', 'responsive', 'active', 'focus', 'focus-within'],
   },
 },
-plugins: [],
+
+plugins: [
+    require('@tailwindcss/aspect-ratio')
+    
+  ],
 };

@@ -3,10 +3,11 @@ import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/router';
-import DropdownHome from "./DropdownHome";
-import DropdownMinistries from './DropdownMinistries';
-import DropdownForm from './DropdownForm';
-import DropdownPlaylist from './DropdownPlaylist';
+import DropdownHome from "./dropdown-home";
+import DropdownMinistries from './dropdown-ministries';
+import DropdownForm from './dropdown-form';
+import DropdownPlaylist from './dropdown-playlist';
+import DropdownRE from './dropdown-re';
 
 
 
@@ -22,7 +23,7 @@ const Navbar = () => {
     const router = useRouter();
     
     return (
-        <div className = "flex justify-between items-center px-10 py-8">
+        <div className = "flex justify-around items-center px-10 py-8">
             <div>
                 <p>Logo</p>
             </div>
@@ -38,27 +39,25 @@ const Navbar = () => {
 
             {/* <div className = "hidden lg:visible"> */}
             <ul className = "hidden lg:flex gap-8 justify-between">
-                <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
+                <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
                     {/* <p onClick = {() => { setShowDropdownHome(!showDropdownHome) }}> */}
-                    <p onClick = {() =>  router.push("/")}>
+                    <p onClick = {() => router.push("/")}>
                         Home
                     </p>
                     {/* {showDropdownHome && <DropdownHome />}  */}
                     {/* <div className = {showDropdownHome? "visible" : "hidden"}>
                         <DropdownHome />
                     </div>   */}
-                    <div className = "hidden absolute z-10 group-hover:block">
+                    <div className="hidden absolute z-10 group-hover:block">
                         <DropdownHome />
                     </div>
-                </li>
+                </li>                
 
 
 
-                <li className = "font-bold text-lg text-gray-500 cursor-pointer">
-                    <p onClick = {() => { setShowDropdownMinistries(!showDropdownMinistries) }}>
-                        Ministries
-                    </p>
-                    <div className = {showDropdownMinistries ? "visible absolute z-10" : "hidden"}>
+                <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
+                    <p>Ministries</p>
+                    <div className = "hidden absolute z-10 group-hover:block">
                         <DropdownMinistries />
                     </div>
                 </li>
@@ -67,30 +66,47 @@ const Navbar = () => {
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
                     <p>Religious Education</p>
-                    <div className = "hidden absolute z-10 group-hover: block">
-                        <ul className = "text-left border rounded">
-                            <li className = "px-4 py-1 hover: bg-gray-100 border-b">RELIGIOUS EDUCATION</li>
-                            <li className = "px-4 py-1 hover: bg-gray-100">RCIA-RITE OF CHRISTIAN INITIATION OF ADULTS</li>
-                        </ul>
+                    <div className = "hidden absolute z-10 group-hover:block">
+                        <DropdownRE />                        
                     </div>
                 </li>
 
 
 
-                <li className="font-bold text-lg text-gray-500 cursor-pointer">
+                {/* <li className="font-bold text-lg text-gray-500 cursor-pointer">
                     <p onClick={() => { setShowDropdownForm(!showDropdownForm) }}>
                         Forms
                     </p>
                     <div className={showDropdownForm ? "visible absolute z-10" : "hidden"}>
                         <DropdownForm />
                     </div>
+                </li> */}
+
+
+
+                <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
+                    <p>Forms</p>
+                    <div className="hidden absolute z-10 group-hover:block">
+                        <DropdownForm />
+                    </div>
                 </li>
 
 
 
-                <li className = "font-bold text-lg text-gray-500 cursor-pointer"><Link href="/donations">Donations</Link></li>
-                <li className = "font-bold text-lg text-gray-500 cursor-pointer"><Link href="/photogallery">Photo Gallery </Link></li>
-                <li className = "font-bold text-lg text-gray-500 cursor-pointer"><Link href="/mass-livestreamed">Mass-Livestreamed</Link></li>
+                <li className="font-bold text-lg text-gray-500 cursor-pointer">
+                    <Link href="/donations">Donations</Link>
+                </li>
+
+
+
+                <li className="font-bold text-lg text-gray-500 cursor-pointer">
+                    <Link href="/photogallery">Photo Gallery </Link>
+                </li>
+
+                <li className="font-bold text-lg text-gray-500 cursor-pointer">
+                    <Link href="/mass-livestreamed">Mass-Livestreamed</Link>
+                </li>
+
 
 
 
@@ -104,13 +120,15 @@ const Navbar = () => {
                     <p>Playlists</p>
 
                     {/* <div className = {showDropdownPlaylist? "visible" : "hidden"}> */}
-                    <div className = "hidden absolute z-10 group-hover: block">
+                    <div className="hidden absolute z-10 group-hover:block">
                         <DropdownPlaylist />
                     </div>
                 </li>
+
             </ul>
 
             {/* </div> */}
+            
 
 
         </div>
