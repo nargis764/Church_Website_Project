@@ -69,5 +69,19 @@ Email: "e.perez@jesusthegoodshepherd.org"
 Id:9, 
 Image: "https://www.jesusthegoodshepherd.org/wp-content/uploads/Staff/DSC_3278-scaled-300x239.jpg",
 Name: "Joel Malabuyoc - Maintenance/Cemetery",
+},
+
+{
+Id:10, 
+Image: "https://jesusthegoodshepherd.org/wp-content/uploads/nophoto-female-150x150.png",
+Name: "Mrs. Kamilla Neves, Brazilian & Portuguese Community",
+Contact: "856.461.0100 Ext. 211",
+},
+
+{
+Id:11, 
+Image: "https://jesusthegoodshepherd.org/wp-content/uploads/nophoto-female-150x150.png",
+Name: "Ms. Mariana Gonzalez, Latino Community",
+Contact: "856.461.0100 Ext. 211",
 }
 ]

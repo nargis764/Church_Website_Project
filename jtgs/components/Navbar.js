@@ -1,26 +1,35 @@
 import React, { useState } from 'react'
 import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/router';
 import DropdownHome from "./dropdown-home";
 import DropdownMinistries from './dropdown-ministries';
 import DropdownForm from './dropdown-form';
 import DropdownPlaylist from './dropdown-playlist';
 import DropdownRE from './dropdown-re';
-
+import DropdownNavbar from "./dropdown-navbar";
 
 
 
 const Navbar = () => {
 
-    const [showDropdownHome, setShowDropdownHome] = useState(false)
-    const [showDropdownMinistries, setShowDropdownMinistries] = useState(false)
-    const [showDropdownForm, setShowDropdownForm] = useState(false)
-    const [showDropdownPlaylist, setShowDropdownPlaylist] = useState(false)
-
+    // const [showDropdownHome, setShowDropdownHome] = useState(false)
+    // const [showDropdownMinistries, setShowDropdownMinistries] = useState(false)
+    // const [showDropdownForm, setShowDropdownForm] = useState(false)
+    // const [showDropdownPlaylist, setShowDropdownPlaylist] = useState(false)
 
     const router = useRouter();
+
+    const [showDropdownNavbar, setShowDropdownNavbar] = useState(false)
+    const [showCloseIcon, setShowCloseIcon] = useState(false)
+
+    
+    const handleClick = () => {
+        setShowDropdownNavbar(!showDropdownNavbar)
+        setShowCloseIcon(!showCloseIcon)
+    }
+
     
     return (
         <div className = "flex justify-around items-center px-10 py-8">
@@ -28,11 +37,20 @@ const Navbar = () => {
                 <p>Logo</p>
             </div>
 
-            <div className = "lg:hidden">
+            <div className = "relative lg:hidden"
+            >
+                <div className = "" 
+                onClick = { handleClick }>
                 <FontAwesomeIcon
-                    icon = {faBars}
+                    icon = {showCloseIcon? faTimes: faBars}
                     className = "fas fa-bars">
                 </FontAwesomeIcon>
+                </div>
+
+                <div className = {showDropdownNavbar? "block absolute z-10 -translate-x-1/2" : "hidden"}>
+                    <DropdownNavbar/>
+                </div>
+                
             </div>
 
 
@@ -56,7 +74,7 @@ const Navbar = () => {
 
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
-                    <p>Ministries</p>
+                    <p onClick={() => {router.push("/ministries")}}>Ministries</p>
                     <div className = "hidden absolute z-10 group-hover:block">
                         <DropdownMinistries />
                     </div>

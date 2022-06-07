@@ -7,8 +7,8 @@ import {  faFacebookF , faYoutube } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
 
     return (
-        <div className = "grid grid-cols-1 bg-gray-500 px-20 py-10 text-center text-white lg:grid-cols-4 lg:text-lg lg:text-left">
-            <div>
+        <div className = "grid grid-cols-1 bg-gray-500 px-20 py-10 text-center text-white bottom-0 lg:grid-cols-4 lg:text-lg lg:text-left">
+            <div className = "lg:ml-10">
                 <ul>
                     <li>805 Warren Street Beverly, NJ 08010</li>
                     <li>Telephone (856) 461-0100</li>
@@ -19,7 +19,7 @@ const Footer = () => {
 
 
 
-            <div>
+            <div className = "lg:ml-20">
                 {/* <p className = "w-1/2 border-b text-center">Office Hours</p> */}
                 <p className = "">Office Hours</p>
                 <p className = "pt-2">Monday-Thursday • 9am-3pm</p>
@@ -28,7 +28,7 @@ const Footer = () => {
 
 
 
-            <div>
+            <div  className = "lg:ml-20">
                 <ul>
                     {/* <li className = "w-1/2 border-b">Quick Links</li> */}
                     <li className = "">Quick Links</li>
@@ -57,7 +57,7 @@ const Footer = () => {
 
 
 
-            <div>
+            <div className = "lg:ml-20">
                 <ul>
                     <li>Follow us on:</li>
                     <li className="cursor-pointer pt-2">
