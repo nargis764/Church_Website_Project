@@ -27,7 +27,7 @@ return (
                         <h5 className = "text-gray-900 text-lg font-semibold text-gray-500 mb-2">{title}</h5>
                         <p className = "text-gray-700 text-gray-500 text-base mb-4">{telephone}</p>
                         {/* sending email to the clicked email Id */}
-                        <Link href = {"mailto:" + email}>
+                        <Link href = {`mailto: ${email}`}>
                                 <a class="text-gray-600 text-s">{email}</a>
                         </Link>
                 </div>

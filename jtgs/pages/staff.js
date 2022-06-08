@@ -8,16 +8,16 @@ const Staff = () => {
 
     return ( 
 
-        <div className="flex flex-col  justify-around my-6 w-80 mx-auto font-Alice font-semibold lg:flex-row lg:w-full">
+        <div className="flex flex-col justify-around my-4 px-20 mx-auto font-Alice font-semibold lg:flex-row lg:w-full">
 
             <div className="mt-6">
                 <ul className="leading-8 text-lg text-gray-500 cursor-pointer">
-                    <li>Directions</li>
-                    <li>Current Bulletin</li>
-                    <li>Archived Bulletins</li>
-                    <li>Staff</li>
-                    <li>Parish History</li>
-                    <li>St Peters Cemetery</li>
+                    <li className="hover:text-teal-500">Directions</li>
+                    <li className="hover:text-teal-500">Archived Bulletins</li>
+                    <li className="hover:text-teal-500">Current Bulletin</li>
+                    <li className="hover:text-teal-500">Staff</li>
+                    <li className="hover:text-teal-500">Parish History</li>
+                    <li className="hover:text-teal-500">St Peters Cemetery</li>
                 </ul>
             </div>
 

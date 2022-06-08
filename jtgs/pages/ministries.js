@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from "next/link"
+
 
 const Ministries = () => {
     return (
@@ -17,7 +19,7 @@ const Ministries = () => {
                 Ministry through Education
             </p>
 
-            <p className ="text-2xl mt-5 text-sky-600">
+            <p className="text-2xl mt-5 text-sky-600">
                 Religious Education Grades 1-8
             </p>
 
@@ -69,7 +71,7 @@ const Ministries = () => {
                 Ministry through Social Service
             </p>
 
-            <p className ="text-2xl mt-5 text-sky-600">
+            <p className="text-2xl mt-5 text-sky-600">
                 Bereavement Committee
             </p>
 
@@ -179,8 +181,8 @@ const Ministries = () => {
 
             <p className="text-lg mt-2">
                 Praise Choir is our Adult Choir
-Contemporary Choir
-Spanish Choir
+                Contemporary Choir
+                Spanish Choir
             </p>
 
             <p className="text-2xl mt-8 text-sky-600">
@@ -245,9 +247,12 @@ Spanish Choir
 
             <p className="text-lg mt-2">
                 Contact: Rev. Jorge Antonio Bedoya - Administrator
-                856.461.0100
-j.bedoya@jesusthegoodshepherd.org
+                856.461.0100                
             </p>
+
+            <Link href={`mailto: ${"j.bedoya@jesusthegoodshepherd.org"}`}>
+                <a class="text-gray-600 text-lg">j.bedoya@jesusthegoodshepherd.org</a>
+            </Link>
 
             <p className="text-lg mt-2">
                 The Deacon is a man called to service - a response to Christ's call. An ordained minister of the Church, the Deacon receives the sacrament from his Bishop, although he typically reports and supports the ministry of the local pastor. The Deacon is the servant of Christ and the people of God. In addition to assisting the priest, the Deacon is empowered to administer certain sacraments and preside at prayer services and devotions. By this public witness, the Deacon shows that the substance of faith is not something that only exists withing the church walls.
@@ -281,39 +286,39 @@ j.bedoya@jesusthegoodshepherd.org
                 Ministry through Administration
             </p>
 
-            <p className ="text-2xl mt-5 text-sky-600">
+            <p className="text-2xl mt-5 text-sky-600">
                 Pastoral Council
             </p>
 
             <p className="text-lg mt-2">
-                Contact: Contact: Rev. Jorge Antonio Bedoya - Administrator 856.461.0100
+                Contact: Rev. Jorge Antonio Bedoya - Administrator 856.461.0100
             </p>
 
-            <p className="text-lg mt-2">
-                j.bedoya@jesusthegoodshepherd.org
-            </p>
+            <Link href={`mailto: ${"j.bedoya@jesusthegoodshepherd.org"}`}>
+                <a class="text-gray-600 text-lg">j.bedoya@jesusthegoodshepherd.org</a>
+            </Link>
 
             <p className="text-lg mt-2">
                 The Pastoral Council is make up of volunteer parishioners advising the pastor in forming the direction of the parish. The council will provide advice and recommendations to assist the pastor, parish staff, and parish at large in matters relevant to the spiritual, social, civic, and educational development of our community of faith.
             </p>
 
-            <p className ="text-2xl mt-5 text-sky-600">
+            <p className="text-2xl mt-5 text-sky-600">
                 Buildings and Grounds Maintenance
             </p>
 
             <p className="text-lg mt-2">
-                Contact: Rev. Jorge Antonio Bedoya - Administrator
+                Contact: Rev. Jorge Antonio Bedoya - Administrator 856.461.0100
             </p>
 
-            <p className="text-lg mt-2">
-                j.bedoya@jesusthegoodshepherd.org
-            </p>
+            <Link href={`mailto: ${"j.bedoya@jesusthegoodshepherd.org"}`}>
+                <a class="text-gray-600 text-lg">j.bedoya@jesusthegoodshepherd.org</a>
+            </Link>
 
-            <p className="text-lg mt-2">
+            <p className="text-lg mt-2 mb-8">
                 These are always a variety of tasks to be done around our facilities and for various projects. if you have a specialty area or just want to lend a hand, please feel free to ask!
             </p>
 
-            
+
         </div>
     )
 }
