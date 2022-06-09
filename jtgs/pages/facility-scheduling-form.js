@@ -7,9 +7,16 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const FacilitySchedulingForm = () => {
 
+    const handleClick = () => {
+
+    }
+
     return (
-        <div className="mx-20 lg:mx-48">
-            <p className="my-4 text-2xl font-bold lg:px-48">Facility Scheduling Form</p>
+        <div className="mx-20 lg:mx-48">       
+
+            <p className="text-3xl mt-8 mb-4 text-sky-600 lg:px-48">
+                Facility Scheduling Form
+            </p>
 
             <p className="text-lg lg:px-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
@@ -181,7 +188,7 @@ const FacilitySchedulingForm = () => {
 
                 <button
                     className="mb-24 mt-6 text-lg text-white bg-black px-3 py-3 rounded"
-                    onClick={handleClick}>
+                    onClick={ handleClick }>
                     Submit
                 </button>
             </form>

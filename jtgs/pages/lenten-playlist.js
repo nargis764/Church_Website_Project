@@ -1,17 +1,17 @@
-import {useState} from "react";
+import React, { useState } from 'react'
 import ReactAudioPlayer from 'react-audio-player'
 
 
 
-const ChristmasPlaylist = () => {
+const LentenPlaylist = () => {
 
     const [selectedSong, setSelectedSong] = useState("")
 
-
-    return (
+    
+return (
         <div className="px-20 lg:px-80">
             <p className="text-3xl mt-8 mb-8 text-sky-600">
-                Christmas Playlist
+                Lenten Playlist
             </p>
 
             
@@ -49,4 +49,4 @@ const ChristmasPlaylist = () => {
     )
 }
 
-export default ChristmasPlaylist
+export default LentenPlaylist

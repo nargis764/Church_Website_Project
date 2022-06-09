@@ -7,7 +7,7 @@ import {  faFacebookF , faYoutube } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
 
     return (
-        <div className = "grid grid-cols-1 bg-gray-500 px-20 py-10 text-center text-white bottom-0 lg:grid-cols-4 lg:text-lg lg:text-left">
+        <div className = "grid grid-cols-1 bg-gray-500 px-20 py-10 text-center text-white bottom-0 mt-10 lg:grid-cols-4 lg:text-lg lg:text-left">
             <div className = "lg:ml-10">
                 <ul>
                     <li>805 Warren Street Beverly, NJ 08010</li>

@@ -5,9 +5,13 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
 
+    const handleClick = () => {
+
+    }
+
     return (
         <div className="mx-20 lg:mx-48">
-            <p className="my-4 text-2xl font-bold lg:px-48">Contact Me</p>
+            <p className="mb-4 mt-8 text-3xl text-sky-600 lg:px-48">Contact Me</p>
 
             <p className="text-lg lg:px-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
@@ -57,7 +61,7 @@ const ContactForm = () => {
 
             <button 
             className="mb-24 mt-6 text-lg text-white bg-black px-3 py-3 rounded"
-            onClick={handleClick}>
+            onClick={ handleClick }>
                 Submit
             </button>
 

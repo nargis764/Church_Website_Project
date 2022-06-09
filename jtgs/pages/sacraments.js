@@ -55,28 +55,27 @@ const Sacraments = () => {
             </p>
 
 
-            <div className="flex flex-col lg:flex-row-reverse justify-between">
-                <div className="">
+
+            <div className="flex flex-col lg:flex-row-reverse lg:justify-between">
+                <div className="lg:ml-10">
 
 
                     <p className="text-2xl mt-5 text-sky-600">
                         Sacrament of Reconciliation (Confession)
                     </p>
 
-                    <p className="text-lg mt-2">
-                        Saturday 4:00 pm - 4:30 pm at St. Joseph's Church
+                    <p className="text-lg mt-2 ">
+                        Been a while since you've gone to Confession? 
+                        <span className="underline text-sky-600 hover:cursor-pointer"
+                        onClick={() => router.push("https://jesusthegoodshepherd.org/wp-content/uploads/Sacrament-of-Penance.pdf")}>
+                        Click here for a reference guide</span>, including a pray for the Act of Contrition.
                     </p>
-
-                    <p className="text-lg mt-2">
-                        Been a while since you've gone to Confession? Click here for a reference guide, including a pray for the Act of Contrition.
-                    </p>
-
 
 
                 </div>
 
-                <div className="lg:mt-5">
-                    <Image className="mt-6 rounded shadow"
+                <div className="mt-6 mb-6 lg:mt-5">
+                    <Image className="rounded shadow"
                         src={"https://images.pexels.com/photos/326058/pexels-photo-326058.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}
                         //loader function generates the URL for the image by appending a root domain to the provided source
                         loader={() => "https://images.pexels.com/photos/326058/pexels-photo-326058.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}

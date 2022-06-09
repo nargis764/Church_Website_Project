@@ -96,7 +96,7 @@ const DropdownNavbar = () => {
 
 
                 <li className="px-4 py-2 hover:bg-blue-800 border-b">
-                    Mass-Livestreamed
+                    Mass-Livestream
                 </li>
 
 

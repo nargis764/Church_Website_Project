@@ -59,7 +59,9 @@ const Navbar = () => {
             <ul className = "hidden lg:flex gap-8 justify-between">
                 <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
                     {/* <p onClick = {() => { setShowDropdownHome(!showDropdownHome) }}> */}
-                    <p onClick = {() => router.push("/")}>
+                    <p 
+                    className=""
+                    onClick = {() => router.push("/")}>
                         Home
                     </p>
                     {/* {showDropdownHome && <DropdownHome />}  */}
@@ -74,7 +76,9 @@ const Navbar = () => {
 
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
-                    <p onClick={() => {router.push("/ministries")}}>Ministries</p>
+                    <p 
+                    className=""
+                    onClick={() => {router.push("/ministries")}}>Ministries</p>
                     <div className = "hidden absolute z-10 group-hover:block">
                         <DropdownMinistries />
                     </div>
@@ -83,7 +87,7 @@ const Navbar = () => {
 
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
-                    <p>Religious Education</p>
+                    <p className="">Religious Education</p>
                     <div className = "hidden absolute z-10 group-hover:block">
                         <DropdownRE />                        
                     </div>
@@ -103,7 +107,7 @@ const Navbar = () => {
 
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
-                    <p>Forms</p>
+                    <p className="">Forms</p>
                     <div className="hidden absolute z-10 group-hover:block">
                         <DropdownForm />
                     </div>
@@ -118,11 +122,11 @@ const Navbar = () => {
 
 
                 <li className="font-bold text-lg text-gray-500 cursor-pointer">
-                    <Link href="/photogallery">Photo Gallery </Link>
+                    <Link href="/photo-gallery">Photo Gallery </Link>
                 </li>
 
                 <li className="font-bold text-lg text-gray-500 cursor-pointer">
-                    <Link href="/mass-livestreamed">Mass-Livestreamed</Link>
+                    <Link href="/mass-livestream">Mass-Livestream</Link>
                 </li>
 
 
@@ -135,7 +139,7 @@ const Navbar = () => {
                         Playlists
                     </p> */}
 
-                    <p>Playlists</p>
+                    <p className="">Playlists</p>
 
                     {/* <div className = {showDropdownPlaylist? "visible" : "hidden"}> */}
                     <div className="hidden absolute z-10 group-hover:block">
