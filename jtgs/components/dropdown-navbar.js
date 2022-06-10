@@ -16,11 +16,12 @@ const DropdownNavbar = () => {
     const [showDropdownRE, setShowDropdownRE] = useState(false)
     const [showDropdownForm, setShowDropdownForm] = useState(false)
     const [showDropdownPlaylist, setShowDropdownPlaylist] = useState(false)
+    
 
 
     return (
         <>
-            <ul className="grid grid-template-rows-8 text-center text-white min-w-max bg-black opacity-75 rounded">
+            <ul className="grid grid-template-rows-8 text-center text-white min-w-max bg-black opacity-85 rounded">
                 <li className="px-4 py-2 relative hover:bg-blue-800 border-b"
                     onClick={() => { setShowDropdownHome(!showDropdownHome) }}>
                     Home
@@ -31,7 +32,8 @@ const DropdownNavbar = () => {
                         </FontAwesomeIcon>
                     </span>
 
-                    <div className="z-10">
+                    {/* <div className="absolute z-10"> */}
+                    <div className="z-10"> 
                         {showDropdownHome ? <DropdownHome /> : null}
                     </div>
                 </li>
@@ -47,7 +49,8 @@ const DropdownNavbar = () => {
                         </FontAwesomeIcon>
                     </span>
 
-                    <div className="absolute z-10">
+                    {/* <div className="absolute z-10"> */}
+                    <div className="z-10">
                         {showDropdownMinistries ? <DropdownMinistries /> : null}
                     </div>
                 </li>
@@ -63,7 +66,8 @@ const DropdownNavbar = () => {
                         </FontAwesomeIcon>
                     </span>
 
-                    <div className="absolute z-10">
+                    {/* <div className="absolute z-10"> */}
+                    <div className="z-10">
                         {showDropdownRE ? <DropdownRE /> : null}
                     </div>
                 </li>
@@ -79,7 +83,8 @@ const DropdownNavbar = () => {
                         </FontAwesomeIcon>
                     </span>
 
-                    <div className="absolute z-10">
+                    {/* <div className="absolute z-10"> */}
+                    <div className="z-10">
                         {showDropdownForm ? <DropdownForm /> : null}
                     </div>
                 </li>
@@ -110,7 +115,8 @@ const DropdownNavbar = () => {
                         </FontAwesomeIcon>
                     </span>
 
-                    <div className = "absolute z-10">
+                    {/* <div className = "absolute z-10"> */}
+                    <div className = "z-10">
                         {showDropdownPlaylist? <DropdownPlaylist/> : null}
                     </div>
                 </li>

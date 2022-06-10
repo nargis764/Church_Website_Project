@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import heroPicture from "../public/SandDune.jpg";
 import MiddleGrid from "../components/middle-grid";
 import Calendar from "../components/calendar.js";
+import Slider from "../components/slider.js"
 
 
 
@@ -50,7 +51,7 @@ export default function Home() {
 
       <div className = "px-20 pt-20 pb-10 lg:text-xl lg:leading-10">
         <p className = "text-xl lg:text-3xl pb-4">About us</p>
-        <p>Established in 2008 through merger of the parishes of St. Peter in Riverside and St. Joseph in Beverly, this vibrant diverse 
+        <p className="pb-10">Established in 2008 through merger of the parishes of St. Peter in Riverside and St. Joseph in Beverly, this vibrant diverse 
           Catholic family of the Diocese of Trenton serves the Delaware Riverfront communities of Beverly, Burlington Township, Delanco, 
           Edgewater Park and Riverside.</p>
       </div>
@@ -58,7 +59,7 @@ export default function Home() {
 
       {/* Slider Section */}
 
-      
+      <Slider />
 
       {/* Grid Section */}
 

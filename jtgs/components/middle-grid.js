@@ -8,7 +8,7 @@ const MiddleGrid = () => {
 
     return (
         
-        <div className = "grid grid-cols-1 place-items-center mt-10 bg-blue-100 py-20 lg:grid-cols-3 gap-5">
+        <div className = "grid grid-cols-1 place-items-center  bg-blue-100 py-20 lg:grid-cols-3 gap-5">
             
             <p className = "cursor-pointer font-mono text-sm text-gray-500 font-semibold lg:text-2xl"
                 onClick = {() =>

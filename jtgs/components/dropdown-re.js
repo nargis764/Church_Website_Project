@@ -6,9 +6,9 @@ const DropdownRE = () => {
     
     return (
         <>
-            <ul className="grid grid-template-rows-2 text-left border min-w-max bg-gray-100 opacity-85 rounded">
-                <li className="px-4 py-2 hover:bg-blue-100 border-b">RELIGIOUS EDUCATION</li>
-                <li className="px-4 py-2 hover:bg-blue-100">RCIA-RITE OF CHRISTIAN INITIATION OF ADULTS</li>
+            <ul className="grid grid-template-rows-2 text-left min-w-max bg-blue-900 lg:bg-gray-100 lg:opacity-85 rounded">
+                <li className="px-4 py-2 hover:bg-blue-300 border-b">Religious Education</li>
+                <li className="px-4 py-2 hover:bg-blue-300">RCIA-Rite of Christian Initiation of Adults</li>
             </ul>
         </>
     )
