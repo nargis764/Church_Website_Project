@@ -11,7 +11,7 @@ const CatholicCharities = () => {
 
 
     return (
-        <div className = "flex flex-col px-10 lg:flex-row justify-between lg:items-center">            
+        <div className = "flex flex-col px-10 lg:flex-row justify-between lg:items-center lg:px-32">            
             <Image
                 src = {imgURL}
                 loader = {() => imgURL}

@@ -43,6 +43,31 @@ const ChristmasPlaylist = () => {
                     <p>5:10</p>
                 </li>
 
+
+                <li
+                    className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                    onClick={() => { setSelectedSong("/Believer.mp3") }} >
+                    <p>4. Believer - Imagine Dragons</p>
+                    <p>3:36</p>
+
+                </li>
+
+
+                <li
+                    className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                    onClick={() => { setSelectedSong("/Demons.mp3") }}>
+                    <p>5. Demons - Imagine Dragons </p>
+                    <p>3:56</p>
+                </li>
+
+
+                <li
+                    className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                    onClick={() => { setSelectedSong("/It'sASin.mp3") }}>
+                    <p>6. It's A Sin - Pet Shop Boys</p>
+                    <p>5:10</p>
+                </li>
+
             </ul>
 
         </div>

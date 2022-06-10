@@ -31,7 +31,7 @@ const DropdownNavbar = () => {
                         </FontAwesomeIcon>
                     </span>
 
-                    <div className="absolute z-10">
+                    <div className="z-10">
                         {showDropdownHome ? <DropdownHome /> : null}
                     </div>
                 </li>

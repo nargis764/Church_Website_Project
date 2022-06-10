@@ -11,7 +11,7 @@ const DropdownForm = () => {
 
     return (
         <div>
-            <ul className = "grid grid-template-rows-8 text-left border min-w-max bg-gray-100 opacity-85 rounded">
+            <ul className = "grid grid-template-rows-8 text-left min-w-max bg-gray-100 opacity-85 rounded">
                 <li className = "px-4 py-2 hover:bg-blue-100 border-b">
                     <Link href = "/parish-registration-form">PARISH REGISTRATION FORM</Link>
                 </li>

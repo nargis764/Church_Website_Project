@@ -66,8 +66,8 @@ const Sacraments = () => {
 
                     <p className="text-lg mt-2 ">
                         Been a while since you've gone to Confession? 
-                        <span className="underline text-sky-600 hover:cursor-pointer"
-                        onClick={() => router.push("https://jesusthegoodshepherd.org/wp-content/uploads/Sacrament-of-Penance.pdf")}>
+                        <span className="underline text-sky-600 hover:cursor-pointer ml-1"
+                        onClick={() => router.push("https://jesusthegoodshepherd.org/wp-content/uploads/Sacrament-of-Penance.pdf")}> 
                         Click here for a reference guide</span>, including a pray for the Act of Contrition.
                     </p>
 
@@ -130,7 +130,7 @@ const Sacraments = () => {
 
 
             <div className="flex flex-col lg:flex-row-reverse justify-between">
-                <div className="">
+                <div className="lg:ml-10">
 
 
                     <p className="text-2xl mt-5 text-sky-600">

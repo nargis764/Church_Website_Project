@@ -2,7 +2,10 @@ import React from 'react'
 import Link from "next/link"
 
 
+
 const Ministries = () => {
+
+    
     return (
         <div className="px-20 lg:px-48">
             <p className="text-4xl mt-8 text-sky-600">
