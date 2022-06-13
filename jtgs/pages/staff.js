@@ -1,21 +1,40 @@
 import Card from "../components/Card.js";
+import Image from "next/image"
 import { staffData } from "../components/staff-data.js";
 
 
 
 const Staff = () => {
 
+    let imgURL =
+        "https://images.pexels.com/photos/701816/pexels-photo-701816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+
+
 
     return (
 
         // <div className="flex flex-col justify-around my-4 px-20 mx-auto font-Alice font-semibold  lg:w-full">
-        <>
+        <div className="px-20 md:px-32 lg:px-44">
 
-        <p className="text-3xl mt-8 px-20 text-sky-600 lg:px-56">
-                        Staff
-                    </p>
+            <Image
+                className=""
+                src={imgURL}
+                //loader function generates the URL for the image by appending a root domain to the provided source
+                //apparently we don't need the loader function for locally stored images
+                loader={() => imgURL}
+                alt=""
+                // layout = "fill" 
+                layout="responsive"
+                objectFit="cover"
+                width={1250}
+                height={380}
+            />
 
-            <div className="grid grid-cols-1 px-20 md:grid-cols-2 gap-x-20 lg:px-56">
+            <p className="text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider">
+                STAFF
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20">
 
                 {/* <div className="mt-6">
                 <ul className="leading-8 text-lg text-gray-500 cursor-pointer">
@@ -47,7 +66,7 @@ const Staff = () => {
 
 
             </div>
-        </>
+        </div>
     );
 }
 

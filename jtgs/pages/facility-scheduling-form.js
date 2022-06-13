@@ -5,7 +5,11 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 
 
+
 const FacilitySchedulingForm = () => {
+
+    let imgURL =
+        "https://images.pexels.com/photos/701816/pexels-photo-701816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 
     const handleClick = () => {
 
@@ -14,7 +18,7 @@ const FacilitySchedulingForm = () => {
     return (
         <div className="mx-20 lg:mx-48">       
 
-            <p className="text-3xl mt-8 mb-4 text-sky-600 lg:px-48">
+            <p className="text-3xl mt-8 mb-4 text-sky-600 tracking-wider text-center lg:px-44">
                 Facility Scheduling Form
             </p>
 

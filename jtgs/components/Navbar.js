@@ -32,7 +32,7 @@ const Navbar = () => {
 
     
     return (
-        <div className = "flex justify-around items-center px-10 py-8 border-b bg-gray-100 opacity-85 lg:px-20">
+        <div className = "flex justify-around items-center px-10 py-8 border-b bg-gray-100 opacity-85 tracking-wide lg:px-20">
             <div>
                 <p>Logo</p>
             </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
                 <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
                     {/* <p onClick = {() => { setShowDropdownHome(!showDropdownHome) }}> */}
                     <p 
-                    className=""
+                    className="tracking-wider"
                     onClick = {() => router.push("/")}>
                         Home
                     </p>
@@ -68,7 +68,7 @@ const Navbar = () => {
                     {/* <div className = {showDropdownHome? "visible" : "hidden"}>
                         <DropdownHome />
                     </div>   */}
-                    <div className="hidden absolute z-10 group-hover:block">
+                    <div className="hidden absolute z-10 group-hover:block transition-all">
                         <DropdownHome />
                     </div>
                 </li>                
@@ -77,7 +77,7 @@ const Navbar = () => {
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
                     <p 
-                    className=""
+                    className="tracking-wider"
                     onClick={() => {router.push("/ministries")}}>Ministries</p>
                     <div className = "hidden absolute z-10 group-hover:block">
                         <DropdownMinistries />
@@ -87,7 +87,7 @@ const Navbar = () => {
 
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
-                    <p className="">Religious Education</p>
+                    <p className="tracking-wider">Religious Education</p>
                     <div className = "hidden absolute z-10 group-hover:block">
                         <DropdownRE />                        
                     </div>
@@ -107,7 +107,7 @@ const Navbar = () => {
 
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
-                    <p className="">Forms</p>
+                    <p className="tracking-wider">Forms</p>
                     <div className="hidden absolute z-10 group-hover:block">
                         <DropdownForm />
                     </div>
@@ -115,17 +115,17 @@ const Navbar = () => {
 
 
 
-                <li className="font-bold text-lg text-gray-500 cursor-pointer">
+                <li className="font-bold text-lg text-gray-500 cursor-pointer tracking-wider">
                     <Link href="/donations">Donations</Link>
                 </li>
 
 
 
-                <li className="font-bold text-lg text-gray-500 cursor-pointer">
+                <li className="font-bold text-lg text-gray-500 cursor-pointer trracking-wide">
                     <Link href="/photo-gallery">Photo Gallery </Link>
                 </li>
 
-                <li className="font-bold text-lg text-gray-500 cursor-pointer">
+                <li className="font-bold text-lg text-gray-500 cursor-pointer tracking-wider">
                     <Link href="/mass-livestream">Mass-Livestream</Link>
                 </li>
 
@@ -139,7 +139,7 @@ const Navbar = () => {
                         Playlists
                     </p> */}
 
-                    <p className="">Playlists</p>
+                    <p className="tracking-wider">Playlists</p>
 
                     {/* <div className = {showDropdownPlaylist? "visible" : "hidden"}> */}
                     <div className="hidden absolute z-10 group-hover:block">

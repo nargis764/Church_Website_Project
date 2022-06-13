@@ -30,7 +30,7 @@ export default function Home() {
           alt = ""
           // layout = "fill" 
           layout = "responsive"
-          //objectFit="cover"
+          objectFit="cover"
           width = {1250}
           height = {480}
         />
@@ -38,7 +38,7 @@ export default function Home() {
 
 
         {/* used "-translate-x-1/2" to mimic the functionality of translate(-50%) along the x axis which in turn helps in centering the text*/}
-        <p className = "absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-md text-white leading-6 font-extrabold font-mono lg:text-5xl lg:tracking-wide lg:max-w-2xl ">
+        <p className = "absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-md text-white leading-6 font-extrabold font-mono tracking-wide lg:text-5xl lg:tracking-wide lg:max-w-2xl ">
           The Parish Community of Jesus, the Good Shepherd
           United by faith, enriched by diversity
         </p>
@@ -49,12 +49,14 @@ export default function Home() {
 
        {/* About the church section */} 
 
-      <div className = "px-20 pt-20 pb-10 lg:text-xl lg:leading-10">
+      <div className = "pt-20 pb-5 mx-16 lg:text-xl lg:leading-10 lg:mx-36">
         <p className = "text-xl lg:text-3xl pb-4">About us</p>
         <p className="pb-10">Established in 2008 through merger of the parishes of St. Peter in Riverside and St. Joseph in Beverly, this vibrant diverse 
           Catholic family of the Diocese of Trenton serves the Delaware Riverfront communities of Beverly, Burlington Township, Delanco, 
           Edgewater Park and Riverside.</p>
       </div>
+
+      <div className="w-2/5 h-0.5 bg-gray-300 mx-auto"></div> 
 
 
       {/* Slider Section */}

@@ -8,7 +8,7 @@ const PhotoGallery = () => {
     const router = useRouter();
 
     return (
-        <div className="px-20 lg:px-80">
+        <div className="px-20 min-h-screen lg:px-80">
             <p className="text-3xl mt-8 text-sky-600">
                 Photo Gallery
             </p>

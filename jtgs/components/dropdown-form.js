@@ -13,19 +13,19 @@ const DropdownForm = () => {
         <div>
             <ul className = "grid grid-template-rows-8 text-left min-w-max bg-blue-900 lg:bg-gray-100 lg:opacity-85 rounded">
                 <li className = "px-4 py-2 hover:bg-blue-300 border-b">
-                    <Link href = "/parish-registration-form">Parish registration form</Link>
+                    <Link href = "/parish-registration-form">Parish Registration Form</Link>
                 </li>
                 
 
                 <li className = "px-4 py-2 hover:bg-blue-300 border-b">
-                    <Link href = "/facility-scheduling-form">Facility scheduling form</Link>
+                    <Link href = "/facility-scheduling-form">Facility Scheduling Form</Link>
                 </li>
 
 
                 <li className = "px-4 py-2 hover:bg-blue-300 border-b">
                     <p className = "cursor-pointer"
                         onClick = {() => { router.push("https://www.jesusthegoodshepherd.org/wp-content/uploads/Forms/JTGS-Student-Registration-Form_v3.pdf") }}>
-                        Student registration form
+                        Student Registration Form
                     </p>
                 </li>
 
@@ -33,7 +33,7 @@ const DropdownForm = () => {
                 <li className = "px-4 py-2 hover:bg-blue-300 border-b">
                     <p className = "cursor-pointer"
                         onClick = {() => { router.push("https://www.jesusthegoodshepherd.org/wp-content/uploads/Forms/Hall-Rental-Agreement.pdf") }}>
-                        Hall rental agreement form
+                        Hall Rental Agreement Form
                     </p>
                 </li>
 
@@ -41,7 +41,7 @@ const DropdownForm = () => {
                 <li className = "px-4 py-2 hover:bg-blue-300 border-b">
                     <p className = "cursor-pointer"
                         onClick = {() => { router.push("https://www.jesusthegoodshepherd.org/wp-content/uploads/Forms/JTGS-REP-2021-2022-Calendar.pdf") }}>
-                        Religious eductaion calendar
+                        Religious Eductaion Calendar
                     </p>
                 </li>
 
@@ -49,7 +49,7 @@ const DropdownForm = () => {
                 <li className = "px-4 py-2 hover:bg-blue-300 border-b">
                     <p className = "cursor-pointer"
                         onClick = {() => { router.push("https://www.jesusthegoodshepherd.org/wp-content/uploads/Guide-for-Making-a-Good-Confession.pdf") }}>
-                        Guide for making a good confession
+                        Guide For Making a Good Confession
                     </p>
                 </li>
 
@@ -57,7 +57,7 @@ const DropdownForm = () => {
                 <li className = "px-4 py-2 hover:bg-blue-300 border-b">
                     <p className = "cursor-pointer"
                         onClick = {() => { router.push("https://www.jesusthegoodshepherd.org/wp-content/uploads/Forms/Wedding-Guidelines.pdf") }}>
-                        Wedding guidelines
+                        Wedding Guidelines
                     </p>
                 </li>
 
@@ -65,7 +65,7 @@ const DropdownForm = () => {
                 <li className = "px-4 py-2 hover:bg-blue-300">
                     <p className = "cursor-pointer"
                         onClick={() => { router.push("https://www.jesusthegoodshepherd.org/wp-content/uploads/Forms/Wedding-Confirmation-Date.pdf") }}>
-                        Wedding confirmation date
+                        Wedding Confirmation Date
                     </p>
                 </li>
             </ul>

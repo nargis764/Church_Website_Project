@@ -11,7 +11,8 @@ const CatholicCharities = () => {
 
 
     return (
-        <div className = "flex flex-col px-10 lg:flex-row justify-between lg:items-center lg:px-32">            
+        <div className = "flex flex-col px-10 min-h-screen lg:flex-row justify-between lg:items-center lg:px-32">   
+        <div>
             <Image
                 src = {imgURL}
                 loader = {() => imgURL}
@@ -19,6 +20,8 @@ const CatholicCharities = () => {
                 width = {350}
                 height = {200}>
             </Image>
+            </div>         
+            
 
             
             <p className = "px-10 leading-8 text-sm lg:text-xl lg:flex-1">

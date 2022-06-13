@@ -8,9 +8,9 @@ const MiddleGrid = () => {
 
     return (
         
-        <div className = "grid grid-cols-1 place-items-center  bg-blue-100 py-20 lg:grid-cols-3 gap-5">
-            
-            <p className = "cursor-pointer font-mono text-sm text-gray-500 font-semibold lg:text-2xl"
+        <div className = "grid grid-cols-1 place-items-center bg-slate-200 py-10 lg:py-32 mx-16 lg:mx-36 mt-10 tracking-wider lg:grid-cols-3 gap-5">
+    
+            <p className = "cursor-pointer text-sm text-gray-500 font-semibold hover:text-blue-500 hover:scale-125 transition-all lg:text-2xl"
                 onClick = {() =>
                     router.push("https://www.usccb.org/resources/2022cal.pdf")
                 }
@@ -21,7 +21,7 @@ const MiddleGrid = () => {
             
 
 
-            <p className = "cursor-pointer font-mono text-sm text-gray-500 font-semibold lg:text-2xl"
+            <p className = "cursor-pointer text-sm text-gray-500 font-semibold hover:text-blue-500 hover:scale-125 transition-all lg:text-2xl"
                 onClick = {() =>
                     router.push("https://www.jppc.net/onlinebulletins/511template.pdf")
                 }
@@ -31,7 +31,7 @@ const MiddleGrid = () => {
 
 
 
-            <p className = "cursor-pointer font-mono  text-sm text-gray-500 font-semibold lg:text-2xl"
+            <p className = "cursor-pointer text-sm text-gray-500 font-semibold hover:text-blue-500 hover:scale-125 transition-all lg:text-2xl"
                 onClick = {() =>
                     router.push(
                         "https://drive.google.com/drive/folders/1kCpyRMakRBDVJFjr_v5fTY6-C5t4ALhK"
@@ -43,7 +43,7 @@ const MiddleGrid = () => {
 
 
 
-            <p className = "cursor-pointer font-mono  text-sm text-gray-500 font-semibold lg:text-2xl lg:mt-10"
+            <p className = "cursor-pointer text-sm text-gray-500 font-semibold hover:text-blue-500 hover:scale-125 transition-all lg:text-2xl lg:mt-20"
                 onClick = {() =>
                     router.push("/mass-times")
                 }
@@ -54,7 +54,7 @@ const MiddleGrid = () => {
 
 
             <p
-                className = "cursor-pointer font-mono  text-sm text-gray-500 font-semibold lg:text-2xl lg:mt-10"
+                className = "cursor-pointer text-sm text-gray-500 font-semibold hover:text-blue-500 hover:scale-125 transition-all lg:text-2xl lg:mt-20"
                 onClick = {() =>
                     router.push("https://www.jppc.net/onlinebulletins/511template.pdf")
                 }
@@ -65,7 +65,7 @@ const MiddleGrid = () => {
             
 
             <p
-                className = "cursor-pointer font-mono  text-sm text-gray-500 font-semibold lg:text-2xl lg:mt-10"
+                className = "cursor-pointer text-sm text-gray-500 font-semibold hover:text-blue-500 hover:scale-125 transition-all lg:text-2xl lg:mt-20"
                 onClick = {() =>
                     router.push("/catholic-charities")
                 }

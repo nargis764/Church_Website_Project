@@ -16,7 +16,7 @@ const MassLivestream = () => {
                 <Link href="https://www.youtube.com/channel/UCCS4c14stjvrJ5S49p6F_SQ">MASS - Livestreamed on Youtube </Link>
             </p>
 
-            <p className="text-xl mt-8 text-sky-600">
+            <p className="text-xl mt-8 mb-4 text-sky-600">
                 Current Livestream
             </p>
 

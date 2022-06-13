@@ -1,22 +1,44 @@
 import React from 'react'
+import Image from "next/image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
 import ReCAPTCHA from "react-google-recaptcha";
 
 
+
 const ParishRegistrationForm = () => {
+
+    let imgURL =
+        "https://images.pexels.com/photos/701816/pexels-photo-701816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
     
     const handleClick = () => {
 
     }
-
+    
 return (
-    <div className="mx-20 lg:mx-48">
-        <p className="text-3xl mt-8 mb-4 text-sky-600 lg:px-48">
+    <div className="">
+
+        <Image
+                className=""
+                src={imgURL}
+                //loader function generates the URL for the image by appending a root domain to the provided source
+                //apparently we don't need the loader function for locally stored images
+                loader={() => imgURL}
+                alt=""
+                // layout = "fill" 
+                layout="responsive"
+                objectFit="cover"
+                width={1250}
+                height={380}
+            />
+
+
+        <p className="text-3xl mt-8 mb-4 text-sky-600 tracking-wider text-center px-20 lg:px-44">
             Parish Online Registration Form (Complete One Form For Each Person)
         </p>
 
-        <p className="text-lg lg:px-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
+        <div className="px-20 lg:px-44">
+            <p className="text-lg lg:px-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
 
         <form className="lg:px-48">
@@ -283,6 +305,10 @@ return (
                 Register
             </button>
         </form>
+
+        </div>
+
+        
     </div>
 )
 }
