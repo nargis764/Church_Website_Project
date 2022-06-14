@@ -125,7 +125,7 @@ const ReligiousEducation = () => {
                             abused as a minor by a member of the clergy or anyone representing the Catholic Church, or if you know of someone who was, you can report that abuse through the diocesan
                             Abuse Hotline: 1-888-296-2965 or via email at
                             <Link href={`mailto: ${"j.bedoya@jesusthegoodshepherd.org"}`}>
-                                <a class="text-gray-600 text-lg underline">abuseline@dioceseoftrenton.org</a>
+                                <a class="text-gray-600 text-lg underline"> abuseline@dioceseoftrenton.org</a>
                             </Link> . The Diocese of Trenton reports any allegations of sexual abuse to the appropriate law enforcement agencies. Anyone with an allegation is also encourage to provide that information to local law enforcement authorities.
                         </p>
 
@@ -156,7 +156,9 @@ const ReligiousEducation = () => {
                 </p>
 
                 <p className="mt-2">
-                    Email: "m.gimello@jesusthegoodshepherd.org"
+                    Email:<Link href={`mailto: ${"m.gimello@jesusthegoodshepherd.org"}`}>
+                        <a class="text-gray-600 text-lg underline"> m.gimello@jesusthegoodshepherd.org</a>
+                    </Link>
                 </p>
 
                 <p className=" mt-8">
@@ -168,8 +170,11 @@ const ReligiousEducation = () => {
                 </p>
 
                 <p className="mt-2">
-                    Email: "e.perez@jesusthegoodshepherd.org"
+                    Email:<Link href={`mailto: ${"e.perez@jesusthegoodshepherd.org"}`}>
+                        <a class="text-gray-600 text-lg underline"> e.perez@jesusthegoodshepherd.org</a>
+                    </Link>
                 </p>
+
 
 
 

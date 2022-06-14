@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useReducer } from 'react'
 import Image from "next/image"
 import ReactAudioPlayer from 'react-audio-player'
 
@@ -9,9 +9,25 @@ const LentenPlaylist = () => {
     let imgURL =
         "https://images.pexels.com/photos/701816/pexels-photo-701816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 
-    const [selectedSong, setSelectedSong] = useState("")
-    const [selectedTitle, setSelectedTitle] = useState("")
+    const reducer = (state, action) => {
 
+        switch(action.type) {
+
+            case "CurrentSong":
+                return { ...state, selectedSong:action.payload}
+
+            case "SongTitle":
+                return { ...state, selectedTitle:action.payload}   
+
+            default:
+                throw new Error()     
+        }
+    }
+
+    // const [selectedSong, setSelectedSong] = useState("")
+    // const [selectedTitle, setSelectedTitle] = useState("")
+
+    const [state, dispatch] = useReducer(reducer, { selectedSong:"", selectedTitle:""})
 
     return (
         <div className="px-20 lg:px-44">
@@ -34,15 +50,17 @@ const LentenPlaylist = () => {
             </p>
 
             <div className="lg:px-36">
-                <p className="text-xl mb-4">{selectedTitle}</p>
-            <ReactAudioPlayer className="w-full" src={`${selectedSong}`} autoPlay controls />
+                <p className="text-xl mb-4">{state.selectedTitle}</p>
+            <ReactAudioPlayer className="w-full" src={`${state.selectedSong}`} autoPlay controls />
 
 
             <ul className="w-50 mt-10 leading-10">
                 <li
                     className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
-                    onClick={() => { setSelectedSong("/Believer.mp3")
-                    setSelectedTitle("Believer - Imagine Dragons") }} >
+                    // onClick={() => { setSelectedSong("/Believer.mp3")
+                    // setSelectedTitle("Believer - Imagine Dragons") }}
+                    onClick={() => { dispatch({type:"CurrentSong", payload:"Believer.mp3"})
+                    dispatch({type:"SongTitle", payload:"Believer - Imagine Dragons"}) }} >
                     <p>1. Believer - Imagine Dragons</p>
                     <p>3:36</p>
 
@@ -51,8 +69,8 @@ const LentenPlaylist = () => {
 
                 <li
                     className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
-                    onClick={() => { setSelectedSong("/Demons.mp3") 
-                    setSelectedTitle("Demons - Imagine Dragons")}}>
+                    onClick={() => { dispatch({type:"CurrentSong", payload:"Demons.mp3"})
+                    dispatch({type:"SongTitle", payload:"Demons - Imagine Dragons"}) }}>
                     <p>2. Demons - Imagine Dragons </p>
                     <p>3:56</p>
                 </li>
@@ -60,8 +78,8 @@ const LentenPlaylist = () => {
 
                 <li
                     className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
-                    onClick={() => { setSelectedSong("/It'sASin.mp3") 
-                    setSelectedTitle("It's A Sin - Pet Shop Boys")}}>
+                    onClick={() => { dispatch({type:"CurrentSong", payload:"It'sASin.mp3"})
+                    dispatch({type:"SongTitle", payload:"It's A Sin - Pet Shop Boys"}) }}>    
                     <p>3. It's A Sin - Pet Shop Boys</p>
                     <p>5:10</p>
                 </li>
@@ -69,8 +87,8 @@ const LentenPlaylist = () => {
 
                 <li
                     className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
-                    onClick={() => { setSelectedSong("/Believer.mp3") 
-                    setSelectedTitle("Believer - Imagine Dragons")}} >
+                    onClick={() => { dispatch({type:"CurrentSong", payload:"Believer.mp3"})
+                    dispatch({type:"SongTitle", payload:"Believer - Imagine Dragons"}) }}>    
                     <p>4. Believer - Imagine Dragons</p>
                     <p>3:36</p>
 
@@ -79,8 +97,8 @@ const LentenPlaylist = () => {
 
                 <li
                     className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
-                    onClick={() => { setSelectedSong("/Demons.mp3") 
-                    setSelectedTitle("Demons - Imagine Dragons")}}>
+                    onClick={() => { dispatch({type:"CurrentSong", payload:"Demons.mp3"})
+                    dispatch({type:"SongTitle", payload:"Demons - Imagine Dragons"}) }}>    
                     <p>5. Demons - Imagine Dragons </p>
                     <p>3:56</p>
                 </li>
@@ -88,8 +106,8 @@ const LentenPlaylist = () => {
 
                 <li
                     className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
-                    onClick={() => { setSelectedSong("/It'sASin.mp3") 
-                    setSelectedTitle("It's A Sin - Pet Shop Boys")}}>
+                    onClick={() => { dispatch({type:"CurrentSong", payload:"It'sASin.mp3"})
+                    dispatch({type:"SongTitle", payload:"It's A Sin - Pet Shop Boys"}) }}>      
                     <p>6. It's A Sin - Pet Shop Boys</p>
                     <p>5:10</p>
                 </li>

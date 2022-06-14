@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useReducer } from 'react'
 import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -21,13 +21,30 @@ const Navbar = () => {
 
     const router = useRouter();
 
-    const [showDropdownNavbar, setShowDropdownNavbar] = useState(false)
-    const [showCloseIcon, setShowCloseIcon] = useState(false)
+
+    const reducer = (state,action) => {
+
+        switch(action.type) {
+
+            case "displayNavbarDropdown":
+                return {...state, showDropdownNavbar: !state.showDropdownNavbar}
+
+            case "displayCloseIcon":
+                return {...state, showCloseIcon: !state.showCloseIcon}  
+
+            default:
+                throw new Error();    
+
+        }
+    }
+
+
+    const [state, dispatch] = useReducer(reducer, { showDropdownNavbar:false, showCloseIcon:false })
 
     
     const handleClick = () => {
-        setShowDropdownNavbar(!showDropdownNavbar)
-        setShowCloseIcon(!showCloseIcon)
+        dispatch({type:"displayNavbarDropdown"})
+        dispatch({type:"displayCloseIcon"})
     }
 
     
@@ -42,12 +59,12 @@ const Navbar = () => {
                 <div className = "" 
                 onClick = { handleClick }>
                 <FontAwesomeIcon
-                    icon = {showCloseIcon? faTimes: faBars}
+                    icon = {state.showCloseIcon? faTimes: faBars}
                     className = "fas fa-bars">
                 </FontAwesomeIcon>
                 </div>
 
-                <div className = {showDropdownNavbar? "block absolute z-10 -translate-x-1/2" : "hidden"}>
+                <div className = {state.showDropdownNavbar? "block absolute z-10 -translate-x-1/2" : "hidden"}>
                     <DropdownNavbar/>
                 </div>
                 

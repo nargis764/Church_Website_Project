@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useReducer } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import DropdownHome from './dropdown-home';
@@ -11,19 +11,37 @@ import DropdownPlaylist from './dropdown-playlist';
 
 const DropdownNavbar = () => {
 
-    const [showDropdownHome, setShowDropdownHome] = useState(false)
-    const [showDropdownMinistries, setShowDropdownMinistries] = useState(false)
-    const [showDropdownRE, setShowDropdownRE] = useState(false)
-    const [showDropdownForm, setShowDropdownForm] = useState(false)
-    const [showDropdownPlaylist, setShowDropdownPlaylist] = useState(false)
-    
+    const reducer = (state,action) => {
 
+        switch(action.type) {
+
+            case 'showHome':
+                return {...state, showDropdownHome: !state.showDropdownHome}
+
+            case 'showMinistries':
+                return {...state, showDropdownMinistries: !state.showDropdownMinistries}   
+
+            case 'showRE':
+                return {...state, showDropdownRE: !state.showDropdownRE}    
+
+            case 'showForm':
+                return {...state, showDropdownForm: !state.showDropdownForm}
+
+            case 'showPlaylist':
+                return {...state, showDropdownPlaylist: !state.showDropdownPlaylist}    
+
+            default: 
+            throw new Error();
+        }
+    }
+
+    const [state, dispatch] = useReducer(reducer, { showDropdownHome:false, showDropdownMinistries:false, showDropdownRE:false, showDropdownForm:false, showDropdownPlaylist:false })
 
     return (
         <>
             <ul className="grid grid-template-rows-8 text-center text-white min-w-max bg-black opacity-85 rounded">
                 <li className="px-4 py-2 relative hover:bg-blue-800 border-b"
-                    onClick={() => { setShowDropdownHome(!showDropdownHome) }}>
+                    onClick={() =>  dispatch({ type: 'showHome' }) }>
                     Home
                     <span className="ml-2">
                         <FontAwesomeIcon
@@ -34,13 +52,13 @@ const DropdownNavbar = () => {
 
                     {/* <div className="absolute z-10"> */}
                     <div className="z-10"> 
-                        {showDropdownHome ? <DropdownHome /> : null}
+                        {state.showDropdownHome ? <DropdownHome /> : null}
                     </div>
                 </li>
 
 
                 <li className="px-4 py-2 relative hover:bg-blue-800 border-b"
-                    onClick={() => { setShowDropdownMinistries(!showDropdownMinistries) }}>
+                    onClick={() => dispatch({ type:"showMinistries" })}>
                     Ministries
                     <span className="ml-2">
                         <FontAwesomeIcon
@@ -51,13 +69,13 @@ const DropdownNavbar = () => {
 
                     {/* <div className="absolute z-10"> */}
                     <div className="z-10">
-                        {showDropdownMinistries ? <DropdownMinistries /> : null}
+                        {state.showDropdownMinistries ? <DropdownMinistries /> : null}
                     </div>
                 </li>
 
 
                 <li className="px-4 py-2 relative hover:bg-blue-800 border-b"
-                onClick={() => { setShowDropdownRE(!showDropdownRE) }}>
+                onClick={() => dispatch({ type:"showRE" })}>
                     Religious Education
                     <span className="ml-2">
                         <FontAwesomeIcon
@@ -68,13 +86,13 @@ const DropdownNavbar = () => {
 
                     {/* <div className="absolute z-10"> */}
                     <div className="z-10">
-                        {showDropdownRE ? <DropdownRE /> : null}
+                        {state.showDropdownRE ? <DropdownRE /> : null}
                     </div>
                 </li>
 
 
                 <li className="px-4 py-2 relative hover:bg-blue-800 border-b"
-                onClick={() => { setShowDropdownForm(!showDropdownForm)}}>
+                onClick={() => dispatch({ type:"showForm" })}>
                     Forms
                     <span className="ml-2">
                         <FontAwesomeIcon
@@ -85,7 +103,7 @@ const DropdownNavbar = () => {
 
                     {/* <div className="absolute z-10"> */}
                     <div className="z-10">
-                        {showDropdownForm ? <DropdownForm /> : null}
+                        {state.showDropdownForm ? <DropdownForm /> : null}
                     </div>
                 </li>
 
@@ -106,7 +124,7 @@ const DropdownNavbar = () => {
 
 
                 <li className="px-4 py-2 relative hover:bg-blue-800"
-                onClick = {() => setShowDropdownPlaylist(!showDropdownPlaylist)}>
+                onClick = {() => dispatch({ type:"showPlaylist" })}>
                     Playlists
                     <span className="ml-2">
                         <FontAwesomeIcon
@@ -117,7 +135,7 @@ const DropdownNavbar = () => {
 
                     {/* <div className = "absolute z-10"> */}
                     <div className = "z-10">
-                        {showDropdownPlaylist? <DropdownPlaylist/> : null}
+                        {state.showDropdownPlaylist? <DropdownPlaylist/> : null}
                     </div>
                 </li>
             </ul>

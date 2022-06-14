@@ -4,7 +4,6 @@ import {  faFacebookF , faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 
 
-
 const Footer = () => {
 
     return (
@@ -40,7 +39,7 @@ const Footer = () => {
                     {/* <li className = "w-1/2 border-b">Quick Links</li> */}
                     <li className = "">Quick Links</li>
 
-                    <li className = "pt-2">
+                    <li className = "pt-2 hover:font-bold hover:text-blue-900">
                         <Link href="/times-and-directions">
                             Times and Directions
                         </Link>
