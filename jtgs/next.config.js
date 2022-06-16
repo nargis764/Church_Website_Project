@@ -5,6 +5,9 @@ const nextConfig = {
     domains: ["jesusthegoodshepherd.org", "pexels.com","myconfig.com"],
     formats: ['image/avif', 'image/webp'],
   },
+
 }
+
+
 
 module.exports = nextConfig

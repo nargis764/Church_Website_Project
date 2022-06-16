@@ -56,7 +56,7 @@ const MiddleGrid = () => {
             <p
                 className = "cursor-pointer text-sm text-gray-500 font-semibold hover:text-blue-500 hover:scale-125 transition-all lg:text-2xl lg:mt-20"
                 onClick = {() =>
-                    router.push("https://www.jppc.net/onlinebulletins/511template.pdf")
+                    router.push("https://docs.google.com/document/d/1htsneE3xglAvJETB6jCG9QwJOxKEWz1hkosQ8cx4LOY/edit")
                 }
             >
                 Baptism
