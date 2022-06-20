@@ -31,7 +31,7 @@ const Staff = () => {
             />
 
             <p className="text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider">
-                STAFF
+                MEET OUR STAFF
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20">

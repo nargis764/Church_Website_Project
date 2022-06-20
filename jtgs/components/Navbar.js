@@ -77,7 +77,7 @@ const Navbar = () => {
                 <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
                     {/* <p onClick = {() => { setShowDropdownHome(!showDropdownHome) }}> */}
                     <p 
-                    className="tracking-wider"
+                    className="tracking-wider hover:text-fuchsia-700"
                     onClick = {() => router.push("/")}>
                         Home
                     </p>
@@ -94,7 +94,7 @@ const Navbar = () => {
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
                     <p 
-                    className="tracking-wider"
+                    className="tracking-wider hover:text-fuchsia-700"
                     onClick={() => {router.push("/ministries")}}>Ministries</p>
                     <div className = "hidden absolute z-10 group-hover:block">
                         <DropdownMinistries />
@@ -104,7 +104,7 @@ const Navbar = () => {
 
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
-                    <p className="tracking-wider">Religious Education</p>
+                    <p className="tracking-wider hover:text-fuchsia-700">Religious Education</p>
                     <div className = "hidden absolute z-10 group-hover:block">
                         <DropdownRE />                        
                     </div>
@@ -124,7 +124,7 @@ const Navbar = () => {
 
 
                 <li className = "relative group font-bold text-lg text-gray-500 cursor-pointer">
-                    <p className="tracking-wider">Forms</p>
+                    <p className="tracking-wider hover:text-fuchsia-700">Forms</p>
                     <div className="hidden absolute z-10 group-hover:block">
                         <DropdownForm />
                     </div>
@@ -156,7 +156,7 @@ const Navbar = () => {
                         Playlists
                     </p> */}
 
-                    <p className="tracking-wider">Playlists</p>
+                    <p className="tracking-wider hover:text-fuchsia-700">Playlists</p>
 
                     {/* <div className = {showDropdownPlaylist? "visible" : "hidden"}> */}
                     <div className="hidden absolute z-10 group-hover:block">

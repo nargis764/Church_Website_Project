@@ -6,9 +6,20 @@ const Directions = () => {
     
 
     return (
-        <div className="px-10 my-20 grid gap-x-32 lg:px-32 lg:grid-cols-2">
+        <>
+        <p className="text-3xl text-sky-600 text-center my-10 tracking-wider lg:px-32">
+                Times and Directions
+            </p>
+
+            <div className="px-10 my-20 grid gap-x-32 lg:px-32 lg:grid-cols-2">
+            
+
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.504241280067!2d-74.92703908467888!3d40.06416317940775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c14c8bc39ef5b9%3A0x6e26d12b00db095c!2s805%20Warren%20St%2C%20Beverly%2C%20NJ%2008010!5e0!3m2!1sen!2sus!4v1654193569369!5m2!1sen!2sus" width="600" height="450" className="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div className="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.504241280067!2d-74.92703908467888!3d40.06416317940775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c14c8bc39ef5b9%3A0x6e26d12b00db095c!2s805%20Warren%20St%2C%20Beverly%2C%20NJ%2008010!5e0!3m2!1sen!2sus!4v1654193569369!5m2!1sen!2sus" 
+                width="600" height="450" className="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
                 <p className="text-lg font-bold mt-5">
                     Our Location
                 </p>
@@ -82,6 +93,8 @@ const Directions = () => {
 
             </div>
         </div>
+        </>
+        
     )
 }
 

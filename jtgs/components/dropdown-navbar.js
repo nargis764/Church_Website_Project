@@ -16,19 +16,19 @@ const DropdownNavbar = () => {
         switch(action.type) {
 
             case 'showHome':
-                return {...state, showDropdownHome: !state.showDropdownHome}
+                return {...state, showDropdownHome: !state.showDropdownHome, showDropdownMinistries: false, showDropdownRE: false, showDropdownForm: false, showDropdownPlaylist: false }
 
             case 'showMinistries':
-                return {...state, showDropdownMinistries: !state.showDropdownMinistries}   
+                return {...state, showDropdownMinistries: !state.showDropdownMinistries, showDropdownHome: false, showDropdownRE: false, showDropdownForm: false, showDropdownPlaylist: false}   
 
             case 'showRE':
-                return {...state, showDropdownRE: !state.showDropdownRE}    
+                return {...state, showDropdownRE: !state.showDropdownRE, showDropdownHome: false, showDropdownMinistries: false, showDropdownForm: false, showDropdownPlaylist: false}    
 
             case 'showForm':
-                return {...state, showDropdownForm: !state.showDropdownForm}
+                return {...state, showDropdownForm: !state.showDropdownForm, showDropdownHome: false, showDropdownMinistries: false, showDropdownRE: false, showDropdownPlaylist: false}
 
             case 'showPlaylist':
-                return {...state, showDropdownPlaylist: !state.showDropdownPlaylist}    
+                return {...state, showDropdownPlaylist: !state.showDropdownPlaylist, showDropdownHome: false, showDropdownMinistries: false, showDropdownRE: false, showDropdownForm: false }    
 
             default: 
             throw new Error();
@@ -37,6 +37,7 @@ const DropdownNavbar = () => {
 
     const [state, dispatch] = useReducer(reducer, { showDropdownHome:false, showDropdownMinistries:false, showDropdownRE:false, showDropdownForm:false, showDropdownPlaylist:false })
 
+    
     return (
         <>
             <ul className="grid grid-template-rows-8 text-center text-white min-w-max bg-black opacity-85 rounded">

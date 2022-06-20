@@ -15,7 +15,11 @@ const PhotoGallery = () => {
 
             <p className="text-lg mt-5 underline hover:text-teal-600">
                 <Link href="https://drive.google.com/drive/folders/1hvPEPop1xPxX2BFfWO_jFnY8J8a2zkke">Gallery</Link>
-            </p>
+            </p>       
+    
+
+
+
         </div>
     )
 }
