@@ -300,7 +300,7 @@ return (
             />
 
             <button
-                className="mb-24 mt-6 text-lg text-white bg-black px-3 py-3 rounded"
+                className="mb-24 mt-6 text-lg text-white bg-black px-3 py-3 rounded hover:bg-gray-800"
                 onClick={handleClick}>
                 Register
             </button>

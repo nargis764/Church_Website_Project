@@ -14,9 +14,9 @@ const Footer = () => {
                     <li className = "pt-2">805 Warren Street Beverly, NJ 08010</li>
                     <li>Telephone (856) 461-0100</li>
                     <li>Fax (856) 764-6133</li>
-                    <li>
+                    <li className="hover:underline">
                         <Link href = {`mailto: ${"info@jesusthegoodshepherd.org"}`}>
-                                <a class="text-lg">{"info@jesusthegoodshepherd.org"}</a>
+                                <a className="text-lg">{"info@jesusthegoodshepherd.org"}</a>
                         </Link>
                         
                     </li>
@@ -40,19 +40,19 @@ const Footer = () => {
                     <li className = "">Quick Links</li>
 
                     {/* <li className = "pt-2 hover:font-bold hover:text-blue-900"> */}
-                    <li className = "pt-2 ">  
+                    <li className = "pt-2 hover:underline">  
                         <Link href="/times-and-directions">
                             Times and Directions
                         </Link>
                     </li>
 
-                    <li>
+                    <li className = "hover:underline">
                         <Link href="/contact-me">
                             Contact Me
                         </Link>
                     </li>
 
-                    <li>
+                    <li className = "hover:underline">
                         <Link href="https://www.jesusthegoodshepherd.org/wp-content/uploads/Our-Business-Patrons_20210815.pdf">
                             Patronize Our Bulletin Sponsors
                         </Link>

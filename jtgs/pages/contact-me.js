@@ -1,17 +1,36 @@
 import React from 'react'
 import ReCAPTCHA from "react-google-recaptcha";
-
+import Image from "next/image";
 
 
 const ContactForm = () => {
+
+    let imgURL =
+        "https://images.pexels.com/photos/701816/pexels-photo-701816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 
     const handleClick = () => {
 
     }
 
+
     return (
-        <div className="mx-20 lg:mx-48">
-            <p className="mb-4 mt-8 text-3xl text-sky-600 lg:px-48">Contact Me</p>
+        <div className="mx-20 lg:mx-44">
+            <div>
+        <Image
+                    className=""
+                    src={imgURL}
+                    //loader function generates the URL for the image by appending a root domain to the provided source
+                    //apparently we don't need the loader function for locally stored images
+                    loader={() => imgURL}
+                    alt=""
+                    layout="responsive"
+                    objectFit="cover"
+                    width={1250}
+                    height={380}
+                />
+            </div>  
+
+            <p className="mb-4 mt-8 text-3xl text-sky-600 text-center">Contact Me</p>
 
             <p className="text-lg lg:px-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
@@ -60,7 +79,7 @@ const ContactForm = () => {
             />
 
             <button 
-            className="mb-24 mt-6 text-lg text-white bg-black px-3 py-3 rounded"
+            className="mb-24 mt-6 text-lg text-white bg-black px-3 py-3 rounded hover:bg-gray-800"
             onClick={ handleClick }>
                 Submit
             </button>

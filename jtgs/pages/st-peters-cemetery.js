@@ -26,11 +26,11 @@ const StPetersCemetery = () => {
             />
 
             <p className="text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider">
-                St. Peter's Cemetery
+                St. Peter&#39;s Cemetery
             </p>
 
             <p className="text-2xl mt-5 text-sky-600">
-                St. Peter's Roman Catholic Cemetery and Mausoleum Est. 1917
+                St. Peter&#39;s Roman Catholic Cemetery and Mausoleum Est. 1917
             </p>
 
             <p className="text-lg mt-2">

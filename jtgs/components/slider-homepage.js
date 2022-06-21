@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { useRouter } from "next/router";
 import Image from 'next/image'
 
 import "slick-carousel/slick/slick.css";
@@ -7,9 +8,14 @@ import Slider from "react-slick";
 
 
 
-const SliderHomepage = () => {
 
-    const images = ["/IMG_7883.JPG", "/IMG_7893.JPG", "/IMG_8134.JPG", "/IMG_8160.JPG"]
+const SliderHomepage = () => {
+    const router = useRouter();
+
+    const images = [{ img: "/IMG_7883.JPG", title: "A Message from Bishop", method: () => { router.push("https://www.youtube.com/watch?v=bTWTdkQyfqg") } },
+    { img: "/IMG_7893.JPG", title: "Online Giving", method: () => { router.push("https://www.osvhub.com/jesusthegoodshepherd/sign_in?redirectUri=%2Fjesusthegoodshepherd%2Ffunds") } },
+    { img: "/IMG_8134.JPG", title: "Going Away? Find a Mass Near you", method: () => { router.push("https://masstimes.org/") } },
+    { img: "/IMG_8160.JPG", title: "Nothing 4" }]
 
     //Implementation-I (without any library)
 
@@ -72,12 +78,13 @@ const SliderHomepage = () => {
 
     //     </div>
     // )
+    
 
 
     //Implementation-II (using react-slick library)
     // more resources can be used from the link below for further modification
     //documents for settings/configuration (https://react-slick.neostack.com/docs/api/)
-    
+
     const sliderRef = useRef();
 
     const settings = {
@@ -85,7 +92,7 @@ const SliderHomepage = () => {
         infinite: true,
         speed: 1000,
         slidesToShow: 1,
-        arrows:true,
+        arrows: true,
         slidesToScroll: 1
     };
 
@@ -100,31 +107,38 @@ const SliderHomepage = () => {
     return (
 
         <div className="mx-16 mt-20 relative lg:mx-36">
-            <div>                
-                    <span className="cursor-pointer z-10 absolute top-2/4 left-8 text-white text-3xl font-bold hover:text-green-300 select-none"
+            <div>
+                <span className="cursor-pointer z-10 absolute top-2/4 left-8 text-white text-3xl font-bold hover:text-green-300 select-none"
                     onClick={previousSlide}
-                    >&#10094;</span>
-                
-                    <span className="cursor-pointer z-10 absolute top-2/4 right-8 text-white text-3xl font-bold hover:text-green-300 select-none"
+                >&#10094;</span>
+
+                <span className="cursor-pointer z-10 absolute top-2/4 right-8 text-white text-3xl font-bold hover:text-green-300 select-none"
                     onClick={nextSlide}
-                    >&#10095;</span>
+                >&#10095;</span>
             </div>
 
-            <Slider {...settings} autoplay autoplaySpeed={5000} ref={sliderRef}> 
+            <Slider {...settings} autoplay autoplaySpeed={5000} ref={sliderRef}>
                 {images.map((image, index) => {
                     return (
                         <div className="" key={index}>
                             <Image
                                 className=""
-                                src={image}
-                                loader={() => image}
+                                src={image.img}
+                                loader={() => image.img}
                                 alt=""
                                 layout="responsive"
                                 objectFit="cover"
                                 width={1250}
                                 height={480}
                             />
+
+<div className="text-lg font-semibold text-gray-600 pl-5 ">
+                            <p className={image.method ? "hover:cursor-pointer" : "text-lg hover:cursor-default"}
+                                onClick={image.method}>
+                                {image.title}
+                            </p>
                         </div>
+</div>
                     )
                 })}
             </Slider>

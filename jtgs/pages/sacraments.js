@@ -42,16 +42,16 @@ const Sacraments = () => {
                         </p>
 
                         <p className="text-lg mt-2">
-                            English: 2:00 pm on the 1st Sunday at St. Joseph's Church
-                            2:00 pm on the 3rd Sunday at St. Joseph's Church
+                            English: 2:00 pm on the 1st Sunday at St. Joseph&#39;s Church
+                            2:00 pm on the 3rd Sunday at St. Joseph&#39;s Church
                         </p>
 
                         <p className="text-lg mt-2">
-                            Spanish: 2:00 pm on the 2nd Sunday at St. Joseph's Church
+                            Spanish: 2:00 pm on the 2nd Sunday at St. Joseph&#39;s Church
                         </p>
 
                         <p className="text-lg mt-2">
-                            Portuguese: 2:00 pm on the 4th Sunday at St. Joseph's Church
+                            Portuguese: 2:00 pm on the 4th Sunday at St. Joseph&#39;s Church
                         </p>
 
 
@@ -88,7 +88,7 @@ const Sacraments = () => {
                         </p>
 
                         <p className="text-lg mt-2 ">
-                            Been a while since you've gone to Confession?
+                            Been a while since you&#39;ve gone to Confession?
                             <span className="underline text-sky-600 hover:cursor-pointer ml-1"
                                 onClick={() => router.push("https://jesusthegoodshepherd.org/wp-content/uploads/Sacrament-of-Penance.pdf")}>
                                 Click here for a reference guide</span>, including a pray for the Act of Contrition.

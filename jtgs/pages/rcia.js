@@ -36,27 +36,27 @@ const RCIA = () => {
                 <p className="text-xl mt-8 text-sky-600">Contact:</p>
 
                 <p className=" mt-8">
-                    Name: "Mr. Gary Schmitt - Deacon"
+                    Name: &#34;Mr. Gary Schmitt - Deacon&#34;
                 </p>
 
                 <p className=" mt-2">
-                    Contact: "856.461.0100 ext. 202"
+                    Contact: &#34;856.461.0100 ext. 202&#34;
                 </p>
 
                 <p className="mt-2">
-                    Email: "g.schmitt@jesusthegoodshepherd.org"
+                    Email: &#34;g.schmitt@jesusthegoodshepherd.org&#34;
                 </p>
 
-                <p className=" mt-8">
-                    Name: "Sheryl Zoppina - Parish Secretary"
+                <p className="mt-8">
+                    Name: &#34;Sheryl Zoppina - Parish Secretary&#34;
                 </p>
 
                 <p className=" mt-2">
-                    Contact: "856.461.0100 ext. 201"
+                    Contact: &#34;856.461.0100 ext. 201&#34;
                 </p>
 
                 <p className="mt-2">
-                    Email: "s.zoppina@jesusthegoodshepherd.org"
+                    Email: &#34;s.zoppina@jesusthegoodshepherd.org&#34;
                 </p>
         </div>
     )

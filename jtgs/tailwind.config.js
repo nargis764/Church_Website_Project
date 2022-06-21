@@ -7,7 +7,8 @@ theme: {
                 sans: ['Nunito Sans','Alice', 'sans-serif'],
             },
   },
-},
+
+  },
 variants: {
 
   extend: {

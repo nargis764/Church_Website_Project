@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
 import ReCAPTCHA from "react-google-recaptcha";
+import Image from "next/image";
 
 
 
@@ -15,8 +16,23 @@ const FacilitySchedulingForm = () => {
 
     }
 
+
     return (
-        <div className="mx-20 lg:mx-48">       
+        <div className="mx-20 lg:mx-44">   
+        <div>
+        <Image
+                    className=""
+                    src={imgURL}
+                    //loader function generates the URL for the image by appending a root domain to the provided source
+                    //apparently we don't need the loader function for locally stored images
+                    loader={() => imgURL}
+                    alt=""
+                    layout="responsive"
+                    objectFit="cover"
+                    width={1250}
+                    height={380}
+                />
+            </div>    
 
             <p className="text-3xl mt-8 mb-4 text-sky-600 tracking-wider text-center lg:px-44">
                 Facility Scheduling Form
@@ -191,7 +207,7 @@ const FacilitySchedulingForm = () => {
                 />
 
                 <button
-                    className="mb-24 mt-6 text-lg text-white bg-black px-3 py-3 rounded"
+                    className="mb-24 mt-6 text-lg text-white bg-black px-4 py-3 rounded hover:bg-gray-800"
                     onClick={ handleClick }>
                     Submit
                 </button>

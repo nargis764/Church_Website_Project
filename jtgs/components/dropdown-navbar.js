@@ -6,10 +6,13 @@ import DropdownMinistries from './dropdown-ministries';
 import DropdownRE from './dropdown-re';
 import DropdownForm from './dropdown-form';
 import DropdownPlaylist from './dropdown-playlist';
+import { useRouter } from "next/router";
+
 
 
 
 const DropdownNavbar = () => {
+    const router = useRouter();
 
     const reducer = (state,action) => {
 
@@ -114,10 +117,12 @@ const DropdownNavbar = () => {
                 </li>
 
 
-                <li className="px-4 py-2 hover:bg-blue-800 border-b">
+                <li className="px-4 py-2 hover:bg-blue-800 border-b" onClick={() =>
+                    router.push("/photo-gallery")
+                }>
                     Photo Gallery
                 </li>
-
+                
 
                 <li className="px-4 py-2 hover:bg-blue-800 border-b">
                     Mass-Livestream

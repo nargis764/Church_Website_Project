@@ -31,7 +31,9 @@ const Ministries = () => {
             </p>
 
             <p className="text-lg mt-2">
-                The main purpose of Religious Education is to oversee the Catholic education for our children. Knowing that each child is special and unique, a gift to us from God, we have designed our program with this in mind. Our Religious Education mission is to give children a sense of God, help discover God's Love for them while shaping attitudes of love and respect for self and others.
+                The main purpose of Religious Education is to oversee the Catholic education for our children. 
+                Knowing that each child is special and unique, a gift to us from God, we have designed our program with this in mind. 
+                Our Religious Education mission is to give children a sense of God, help discover God&#39;s Love for them while shaping attitudes of love and respect for self and others.
             </p>
 
             <p className="text-2xl mt-8 text-sky-600">
@@ -43,7 +45,8 @@ const Ministries = () => {
             </p>
 
             <p className="text-lg mt-2">
-                The Holy Innocents organization has a center in every county in the Diocese. Accepting people from Burlington County and Philadelphia, religious instruction, sacramental preparation, social, physical, and musical activities for God's special people is provided. The Holy Innocents meets for 2 hours on Saturdays.
+                The Holy Innocents organization has a center in every county in the Diocese. Accepting people from Burlington County and Philadelphia, religious instruction, sacramental preparation, social, physical, and musical activities for God&#39;s special people is provided. 
+                The Holy Innocents meets for 2 hours on Saturdays.
             </p>
 
             <p className="text-2xl mt-8 text-sky-600">
@@ -127,7 +130,8 @@ const Ministries = () => {
             </p>
 
             <p className="text-lg mt-2">
-                The Knights is the world's largest Catholic Fraternal Service Organization. Not part of any ministry, the Knights are men of the parish. The Knights also serve as Extraordinary Ministers, Lectors, Ushers, and Altar Servers. Not only donating their time for parish functions-liturgical as well as social, the Knights are active in the community doing charitable work.
+                The Knights is the world&#39;s largest Catholic Fraternal Service Organization. Not part of any ministry, the Knights are men of the parish. 
+                The Knights also serve as Extraordinary Ministers, Lectors, Ushers, and Altar Servers. Not only donating their time for parish functions-liturgical as well as social, the Knights are active in the community doing charitable work.
             </p>
 
             <p className="text-2xl mt-8 text-sky-600">
@@ -155,7 +159,8 @@ const Ministries = () => {
             </p>
 
             <p className="text-lg mt-2">
-                Like a family, a parish must both “pray” and “play” together. The committee operates on the premise of supplying the parish with the means to meet and get to know each other through hospitality and family entertainment activities. Help is needed to plan and man the events.
+                Like a family, a parish must both &#34;pray&#34; and &#34;play&#34; together. 
+                The committee operates on the premise of supplying the parish with the means to meet and get to know each other through hospitality and family entertainment activities. Help is needed to plan and man the events.
             </p>
 
             <p className="text-3xl mt-8 text-sky-600">
@@ -254,11 +259,11 @@ const Ministries = () => {
             </p>
 
             <Link href={`mailto: ${"j.bedoya@jesusthegoodshepherd.org"}`}>
-                <a class="text-gray-600 text-lg">j.bedoya@jesusthegoodshepherd.org</a>
+                <a className="text-gray-600 text-lg">j.bedoya@jesusthegoodshepherd.org</a>
             </Link>
 
             <p className="text-lg mt-2">
-                The Deacon is a man called to service - a response to Christ's call. An ordained minister of the Church, the Deacon receives the sacrament from his Bishop, although he typically reports and supports the ministry of the local pastor. The Deacon is the servant of Christ and the people of God. In addition to assisting the priest, the Deacon is empowered to administer certain sacraments and preside at prayer services and devotions. By this public witness, the Deacon shows that the substance of faith is not something that only exists withing the church walls.
+                The Deacon is a man called to service - a response to Christ&#39;s call. An ordained minister of the Church, the Deacon receives the sacrament from his Bishop, although he typically reports and supports the ministry of the local pastor. The Deacon is the servant of Christ and the people of God. In addition to assisting the priest, the Deacon is empowered to administer certain sacraments and preside at prayer services and devotions. By this public witness, the Deacon shows that the substance of faith is not something that only exists withing the church walls.
             </p>
 
             <p className="text-2xl mt-8 text-sky-600">
@@ -274,7 +279,7 @@ const Ministries = () => {
             </p>
 
             <p className="text-lg mt-2">
-                St. Peter's Fraternity of the SFO meets on the fourth Sunday of each month for prayer and fellowship. If you are a practicing Catholic, 18 years or older, and feel that you are being called to a more Gospel-centered life, please come and see.
+                St. Peter&#39;s Fraternity of the SFO meets on the fourth Sunday of each month for prayer and fellowship. If you are a practicing Catholic, 18 years or older, and feel that you are being called to a more Gospel-centered life, please come and see.
             </p>
 
             <p className="text-2xl mt-8 text-sky-600">
@@ -298,7 +303,7 @@ const Ministries = () => {
             </p>
 
             <Link href={`mailto: ${"j.bedoya@jesusthegoodshepherd.org"}`}>
-                <a class="text-gray-600 text-lg">j.bedoya@jesusthegoodshepherd.org</a>
+                <a className="text-gray-600 text-lg">j.bedoya@jesusthegoodshepherd.org</a>
             </Link>
 
             <p className="text-lg mt-2">
@@ -314,7 +319,7 @@ const Ministries = () => {
             </p>
 
             <Link href={`mailto: ${"j.bedoya@jesusthegoodshepherd.org"}`}>
-                <a class="text-gray-600 text-lg">j.bedoya@jesusthegoodshepherd.org</a>
+                <a className="text-gray-600 text-lg">j.bedoya@jesusthegoodshepherd.org</a>
             </Link>
 
             <p className="text-lg mt-2 mb-8">

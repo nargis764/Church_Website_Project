@@ -80,7 +80,7 @@ const LentenPlaylist = () => {
                     className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"It'sASin.mp3"})
                     dispatch({type:"SongTitle", payload:"It's A Sin - Pet Shop Boys"}) }}>    
-                    <p>3. It's A Sin - Pet Shop Boys</p>
+                    <p>3. It&#34;s A Sin - Pet Shop Boys</p>
                     <p>5:10</p>
                 </li>
 
@@ -108,7 +108,7 @@ const LentenPlaylist = () => {
                     className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"It'sASin.mp3"})
                     dispatch({type:"SongTitle", payload:"It's A Sin - Pet Shop Boys"}) }}>      
-                    <p>6. It's A Sin - Pet Shop Boys</p>
+                    <p>6. It&#34;s A Sin - Pet Shop Boys</p>
                     <p>5:10</p>
                 </li>
 

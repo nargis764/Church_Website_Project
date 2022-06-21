@@ -1,12 +1,30 @@
 import React from 'react'
-
+import Image from "next/image";
 
 
 const Directions = () => {
+
+    let imgURL =
+        "https://images.pexels.com/photos/701816/pexels-photo-701816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
     
 
     return (
         <>
+        <div>
+                <Image
+                    className=""
+                    src={imgURL}
+                    //loader function generates the URL for the image by appending a root domain to the provided source
+                    //apparently we don't need the loader function for locally stored images
+                    loader={() => imgURL}
+                    alt=""
+                    layout="responsive"
+                    objectFit="cover"
+                    width={1250}
+                    height={380}
+                />
+            </div>
+
         <p className="text-3xl text-sky-600 text-center my-10 tracking-wider lg:px-32">
                 Times and Directions
             </p>
@@ -17,7 +35,7 @@ const Directions = () => {
             <div>
                 <div className="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-9">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.504241280067!2d-74.92703908467888!3d40.06416317940775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c14c8bc39ef5b9%3A0x6e26d12b00db095c!2s805%20Warren%20St%2C%20Beverly%2C%20NJ%2008010!5e0!3m2!1sen!2sus!4v1654193569369!5m2!1sen!2sus" 
-                width="600" height="450" className="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                width="600" height="450" className="border:0;" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 </div>
                 <p className="text-lg font-bold mt-5">
@@ -25,7 +43,7 @@ const Directions = () => {
                 </p>
 
                 <p className="text-lg">
-                    Jesus, The Good Shepherd Parish at St. Joseph's Church
+                    Jesus, The Good Shepherd Parish at St. Joseph&#39;s Church
                 </p>
 
                 <p className="text-lg">
