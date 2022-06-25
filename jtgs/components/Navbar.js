@@ -54,8 +54,7 @@ const Navbar = () => {
                 <p>Logo</p>
             </div>
 
-            <div className = "relative lg:hidden"
-            >
+            <div className = "relative lg:hidden">
                 <div className = "" 
                 onClick = { handleClick }>
                 <FontAwesomeIcon
@@ -64,7 +63,7 @@ const Navbar = () => {
                 </FontAwesomeIcon>
                 </div>
 
-                <div className = {state.showDropdownNavbar? "block absolute z-10 -translate-x-1/2" : "hidden"}>
+                <div className = {state.showDropdownNavbar? " block absolute z-10 right-0 max-w-sm ease-in duration-500" : "hidden"}>
                     <DropdownNavbar/>
                 </div>
                 

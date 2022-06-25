@@ -33,7 +33,7 @@ return (
             />
 
 
-        <p className="text-3xl mt-8 mb-4 text-sky-600 tracking-wider text-center px-20 lg:px-44">
+        <p className="text-3xl mt-8 mb-8 text-sky-600 tracking-wider text-center lg:mx-44">
             Parish Online Registration Form (Complete One Form For Each Person)
         </p>
 
@@ -47,7 +47,7 @@ return (
                     Last Name <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2 shadow" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -56,7 +56,7 @@ return (
                     First Name <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -65,7 +65,7 @@ return (
                     Address <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -74,7 +74,7 @@ return (
                     City <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -83,7 +83,7 @@ return (
                     US States <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <select className="border border-stone-400 bg-gray-100 text-lg px-4 py-2">
+                <select className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md">
                     <option value="">- Select State -</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -145,7 +145,7 @@ return (
                     Zip <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -154,7 +154,7 @@ return (
                     Date <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="date" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2 shadow" placeholder="" />
+                <input type="date" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" placeholder="" />
             </div>
 
 
@@ -163,7 +163,7 @@ return (
                     Email
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -172,7 +172,7 @@ return (
                     2nd Email
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -181,7 +181,7 @@ return (
                     Telephone <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -190,7 +190,7 @@ return (
                     2nd Telephone
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -199,7 +199,7 @@ return (
                     Birth Date <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -208,7 +208,7 @@ return (
                     Religion <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
@@ -217,7 +217,7 @@ return (
                     Marital Status <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <select className="border border-stone-400 bg-gray-100 text-lg px-4 py-2">
+                <select className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md">
                     <option value="single">Single</option>
                     <option value="married">Married</option>
                     <option value="seperated">Seperated</option>
@@ -266,7 +266,7 @@ return (
                     Office Use Only (Received)
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
                 <div className="flex flex-col space-y-2">
@@ -274,7 +274,7 @@ return (
                     Parish SOFT
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
                 <div className="flex flex-col space-y-2">
@@ -282,7 +282,7 @@ return (
                     OSV
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
                 
                 
@@ -300,7 +300,7 @@ return (
             />
 
             <button
-                className="mb-24 mt-6 text-lg text-white bg-black px-3 py-3 rounded hover:bg-gray-800"
+                className="mb-24 mt-16 text-lg text-white bg-black px-5 py-3 shadow-xl shadow-gray-400 rounded-lg hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]"
                 onClick={handleClick}>
                 Register
             </button>

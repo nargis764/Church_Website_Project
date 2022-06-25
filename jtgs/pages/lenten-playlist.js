@@ -56,7 +56,7 @@ const LentenPlaylist = () => {
 
             <ul className="w-50 mt-10 leading-10">
                 <li
-                    className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     // onClick={() => { setSelectedSong("/Believer.mp3")
                     // setSelectedTitle("Believer - Imagine Dragons") }}
                     onClick={() => { dispatch({type:"CurrentSong", payload:"Believer.mp3"})
@@ -68,7 +68,7 @@ const LentenPlaylist = () => {
 
 
                 <li
-                    className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"Demons.mp3"})
                     dispatch({type:"SongTitle", payload:"Demons - Imagine Dragons"}) }}>
                     <p>2. Demons - Imagine Dragons </p>
@@ -77,7 +77,7 @@ const LentenPlaylist = () => {
 
 
                 <li
-                    className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"It'sASin.mp3"})
                     dispatch({type:"SongTitle", payload:"It's A Sin - Pet Shop Boys"}) }}>    
                     <p>3. It&#34;s A Sin - Pet Shop Boys</p>
@@ -86,7 +86,7 @@ const LentenPlaylist = () => {
 
 
                 <li
-                    className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"Believer.mp3"})
                     dispatch({type:"SongTitle", payload:"Believer - Imagine Dragons"}) }}>    
                     <p>4. Believer - Imagine Dragons</p>
@@ -96,7 +96,7 @@ const LentenPlaylist = () => {
 
 
                 <li
-                    className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"Demons.mp3"})
                     dispatch({type:"SongTitle", payload:"Demons - Imagine Dragons"}) }}>    
                     <p>5. Demons - Imagine Dragons </p>
@@ -105,7 +105,7 @@ const LentenPlaylist = () => {
 
 
                 <li
-                    className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"It'sASin.mp3"})
                     dispatch({type:"SongTitle", payload:"It's A Sin - Pet Shop Boys"}) }}>      
                     <p>6. It&#34;s A Sin - Pet Shop Boys</p>

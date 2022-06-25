@@ -34,19 +34,19 @@ const FacilitySchedulingForm = () => {
                 />
             </div>    
 
-            <p className="text-3xl mt-8 mb-4 text-sky-600 tracking-wider text-center lg:px-44">
+            <p className="text-3xl mt-8 mb-8 text-sky-600 tracking-wider text-center lg:px-44">
                 Facility Scheduling Form
             </p>
 
             <p className="text-lg lg:px-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
             <form className="lg:px-48">
-                <div className="flex flex-col py-4">
-                    <label className="text-lg font-bold pb-2">
+                <div className="flex flex-col">
+                    <label className="text-lg font-bold my-2">
                         Date
                     </label>
 
-                    <input type="date" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2 shadow" placeholder="" />
+                    <input type="date" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" placeholder="" />
                 </div>
 
 
@@ -55,7 +55,7 @@ const FacilitySchedulingForm = () => {
                         Contact Name <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2 shadow" />
+                    <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -64,7 +64,7 @@ const FacilitySchedulingForm = () => {
                         Sponsor Name (Organization) <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -73,7 +73,7 @@ const FacilitySchedulingForm = () => {
                         Telephone <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -82,7 +82,7 @@ const FacilitySchedulingForm = () => {
                         Email <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -91,7 +91,7 @@ const FacilitySchedulingForm = () => {
                         Start Date and Start Time of Event <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="datetime-local" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="datetime-local" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -100,7 +100,7 @@ const FacilitySchedulingForm = () => {
                         End Date and End Time of Event <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="datetime-local" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="datetime-local" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -109,7 +109,7 @@ const FacilitySchedulingForm = () => {
                         Type of Event (Describe)<span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -118,7 +118,7 @@ const FacilitySchedulingForm = () => {
                         Room Being Used (ex. Cafeteria)<span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -127,7 +127,7 @@ const FacilitySchedulingForm = () => {
                         Date Requested <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -136,7 +136,7 @@ const FacilitySchedulingForm = () => {
                         Expected Number of Attendees <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -145,7 +145,7 @@ const FacilitySchedulingForm = () => {
                         Set Up Before Event (Time) <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -154,7 +154,7 @@ const FacilitySchedulingForm = () => {
                         Clean Up After Event (Time) <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -163,7 +163,7 @@ const FacilitySchedulingForm = () => {
                         Special Instructions
                     </label>
 
-                    <textarea type="text" rows="8" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                    <textarea type="text" rows="8" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -175,7 +175,7 @@ const FacilitySchedulingForm = () => {
                     <textarea type="text"
                         rows="8"
                         placeholder="**NOTE** NO alcoholic beverages permitted when children and minors  (21 years of age and younger) are present on the property during event."
-                        className="border border-stone-400 bg-gray-100 text-lg px-4 py-2" />
+                        className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -187,7 +187,7 @@ const FacilitySchedulingForm = () => {
                     <textarea
                         type="text"
                         rows="8"
-                        className="border border-stone-400 bg-gray-100 text-lg px-4 py-2 whitespace-pre">FOR OFFICE USE ONLY
+                        className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md whitespace-pre">FOR OFFICE USE ONLY
                         Date Received:____________________
                         Facility Scheduled? _________Yes    __________No
 
@@ -196,7 +196,8 @@ const FacilitySchedulingForm = () => {
                         Processed By: _______________________________________________________
                     </textarea>
                 </div>
-
+                
+                {/* might change it to HCaptcha */}
                 <p className="text-lg font-bold py-4">
                         Recaptcha
                     </p>
@@ -207,7 +208,7 @@ const FacilitySchedulingForm = () => {
                 />
 
                 <button
-                    className="mb-24 mt-6 text-lg text-white bg-black px-4 py-3 rounded hover:bg-gray-800"
+                    className="mb-24 mt-10 text-lg text-white bg-black px-5 py-3 shadow-lg shadow-gray-400 rounded-lg hover:bg-gray-800"
                     onClick={ handleClick }>
                     Submit
                 </button>

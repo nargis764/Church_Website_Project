@@ -7,7 +7,7 @@ import DropdownRE from './dropdown-re';
 import DropdownForm from './dropdown-form';
 import DropdownPlaylist from './dropdown-playlist';
 import { useRouter } from "next/router";
-
+import Link from "next/link";
 
 
 
@@ -43,8 +43,8 @@ const DropdownNavbar = () => {
     
     return (
         <>
-            <ul className="grid grid-template-rows-8 text-center text-white min-w-max bg-black opacity-85 rounded">
-                <li className="px-4 py-2 relative hover:bg-blue-800 border-b"
+            <ul className="grid grid-template-rows-8 text-center text-white min-w-max text-sm bg-black opacity-85 rounded ml-20">
+                <li className="px-4 py-2 relative hover:bg-blue-800 border-b cursor-pointer"
                     onClick={() =>  dispatch({ type: 'showHome' }) }>
                     Home
                     <span className="ml-2">
@@ -61,7 +61,7 @@ const DropdownNavbar = () => {
                 </li>
 
 
-                <li className="px-4 py-2 relative hover:bg-blue-800 border-b"
+                <li className="px-4 py-2 relative hover:bg-blue-800 border-b cursor-pointer"
                     onClick={() => dispatch({ type:"showMinistries" })}>
                     Ministries
                     <span className="ml-2">
@@ -78,7 +78,7 @@ const DropdownNavbar = () => {
                 </li>
 
 
-                <li className="px-4 py-2 relative hover:bg-blue-800 border-b"
+                <li className="px-4 py-2 relative hover:bg-blue-800 border-b cursor-pointer"
                 onClick={() => dispatch({ type:"showRE" })}>
                     Religious Education
                     <span className="ml-2">
@@ -95,7 +95,7 @@ const DropdownNavbar = () => {
                 </li>
 
 
-                <li className="px-4 py-2 relative hover:bg-blue-800 border-b"
+                <li className="px-4 py-2 relative hover:bg-blue-800 border-b cursor-pointer"
                 onClick={() => dispatch({ type:"showForm" })}>
                     Forms
                     <span className="ml-2">
@@ -112,24 +112,24 @@ const DropdownNavbar = () => {
                 </li>
 
 
-                <li className="px-4 py-2 hover:bg-blue-800 border-b">
-                    Donations
+                <li className="px-4 py-2 hover:bg-blue-800 border-b cursor-pointer">
+                    <Link href="/donations">Donations</Link>
                 </li>
 
 
-                <li className="px-4 py-2 hover:bg-blue-800 border-b" onClick={() =>
+                <li className="px-4 py-2 hover:bg-blue-800 border-b cursor-pointer" onClick={() =>
                     router.push("/photo-gallery")
                 }>
                     Photo Gallery
                 </li>
                 
 
-                <li className="px-4 py-2 hover:bg-blue-800 border-b">
-                    Mass-Livestream
+                <li className="px-4 py-2 hover:bg-blue-800 border-b cursor-pointer">
+                    <Link href="/mass-livestream">Mass-Livestream</Link>
                 </li>
 
 
-                <li className="px-4 py-2 relative hover:bg-blue-800"
+                <li className="px-4 py-2 relative hover:bg-blue-800 cursor-pointer"
                 onClick = {() => dispatch({ type:"showPlaylist" })}>
                     Playlists
                     <span className="ml-2">
