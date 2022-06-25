@@ -26,27 +26,24 @@ const MassLivestream = () => {
 
             <Image
                 className=""
-                src={imgURL}
-                //loader function generates the URL for the image by appending a root domain to the provided source
-                //apparently we don't need the loader function for locally stored images
+                src={imgURL}                
                 loader={() => imgURL}
-                alt=""
-                // layout = "fill" 
+                alt=""                
                 layout="responsive"
                 objectFit="cover"
                 width={1250}
                 height={380}
             />
 
-            <p className="text-3xl mt-8 text-sky-600 text-center tracking-wider">
+            <p className="text-xl md:text-2xl lg:text-3xl mt-8 text-sky-600 text-center tracking-wider">
                 Mass Livestream
             </p>
 
-            <p className="text-xl mt-8 text-sky-600 text-center">
+            <p className="text-md md:text-lg lg:text-xl mt-8 text-sky-600 text-center">
                 <Link href="https://www.youtube.com/channel/UCCS4c14stjvrJ5S49p6F_SQ">MASS - Livestreamed on Youtube </Link>
             </p>
 
-            <p className="text-2xl mt-8 mb-4 text-sky-600 text-center">
+            <p className="text-lg md:text-xl lg:text-2xl mt-8 mb-4 text-sky-600 text-center">
                 Current Livestream
             </p>
 

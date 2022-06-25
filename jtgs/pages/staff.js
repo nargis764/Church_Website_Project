@@ -14,23 +14,20 @@ const Staff = () => {
     return (
 
         // <div className="flex flex-col justify-around my-4 px-20 mx-auto font-Alice font-semibold  lg:w-full">
-        <div className="px-20 md:px-32 lg:px-44">
+        <div className="mx-20 md:mx-32 lg:mx-44">
 
             <Image
                 className=""
-                src={imgURL}
-                //loader function generates the URL for the image by appending a root domain to the provided source
-                //apparently we don't need the loader function for locally stored images
+                src={imgURL}                
                 loader={() => imgURL}
-                alt=""
-                // layout = "fill" 
+                alt=""               
                 layout="responsive"
                 objectFit="cover"
                 width={1250}
                 height={380}
             />
 
-            <p className="text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider">
+            <p className="text-xl md:text-2xl lg:text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider">
                 MEET OUR STAFF
             </p>
 

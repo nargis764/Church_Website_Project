@@ -2,6 +2,7 @@ import React from 'react'
 import Image from "next/image";
 
 
+
 const Directions = () => {
 
     let imgURL =
@@ -13,9 +14,7 @@ const Directions = () => {
         <div>
                 <Image
                     className=""
-                    src={imgURL}
-                    //loader function generates the URL for the image by appending a root domain to the provided source
-                    //apparently we don't need the loader function for locally stored images
+                    src={imgURL}                    
                     loader={() => imgURL}
                     alt=""
                     layout="responsive"
@@ -25,11 +24,11 @@ const Directions = () => {
                 />
             </div>
 
-        <p className="text-3xl text-sky-600 text-center my-10 tracking-wider lg:px-32">
+        <p className="text-xl md:text-2xl lg:text-3xl text-sky-600 text-center my-10 tracking-wider lg:mx-32">
                 Times and Directions
             </p>
 
-            <div className="px-10 my-20 grid gap-x-32 lg:px-32 lg:grid-cols-2">
+            <div className="mx-10 my-20 grid gap-x-32 lg:mx-32 lg:grid-cols-2">
             
 
             <div>
@@ -38,74 +37,74 @@ const Directions = () => {
                 width="600" height="450" className="border:0;" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 </div>
-                <p className="text-lg font-bold mt-5">
+                <p className="text-md md:text-lg lg:text-xl font-bold mt-5">
                     Our Location
                 </p>
 
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     Jesus, The Good Shepherd Parish at St. Joseph&#39;s Church
                 </p>
 
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg mb-5">
                     805 Warren St, Beverly, NJ 08010
                 </p>
             </div>
 
             <div>
-                <p className="text-xl font-bold">
+                <p className="text-md md:text-lg lg:text-xl font-bold">
                     Mass Schedule  /  Horario De Las Misas  /  Horario De Missa
                 </p>
 
-                <p className="text-lg font-semibold mt-5">
+                <p className="text-sm md:text-md lg:text-lg font-semibold mt-5">
                     Saturday Evening / Sabado
                 </p>
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     5:00 pm
                 </p>
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     7:30 pm in Portugues
                 </p>
 
-                <p className="text-lg font-semibold mt-5">
+                <p className="text-sm md:text-md lg:text-lg font-semibold mt-5">
                     Sunday / Domingo
                 </p>
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     8:00 am
                 </p>
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     10:00 am
                 </p>
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     12:00 pm  en Espanol
                 </p>
 
-                <p className="text-lg font-semibold mt-5">
+                <p className="text-sm md:text-md lg:text-lg font-semibold mt-5">
                     Weekday Mass  /  Misa diaria  /  Missa diaria
                 </p>
                 <p>
                     Weekday Mass is in Church 9:00 am.
                 </p>
 
-                <p className="text-lg font-semibold mt-5">
+                <p className="text-sm md:text-md lg:text-lg font-semibold mt-5">
                     Holy Hour
                 </p>
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     Tuesday, 7 pm Holy Hour in English
                 </p>
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     Miércoles, 7 pm Hora Santa en Español
                 </p>
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     Quinta-feria, 8 pm Grupo de oração em Português
                 </p>
 
-                <p className="text-lg font-semibold mt-5">
+                <p className="text-sm md:text-md lg:text-lg font-semibold mt-5">
                     Holy Days Mass Schedule
                 </p>
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     7:00 pm Vigil Mass
                 </p>
-                <p className="text-lg">
+                <p className="text-sm md:text-md lg:text-lg ">
                     Holy Days 9:00 am and 7:00 pm
                 </p>
 

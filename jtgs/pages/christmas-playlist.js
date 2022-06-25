@@ -28,12 +28,10 @@ const ChristmasPlaylist = () => {
 
 
     return (
-        <div className="px-20 lg:px-44">
+        <div className="mx-20 lg:mx-44">
             <Image
                 className=""
-                src={imgURL}
-                //loader function generates the URL for the image by appending a root domain to the provided source
-                //apparently we don't need the loader function for locally stored images
+                src={imgURL}                
                 loader={() => imgURL}
                 alt=""
                 layout="responsive"
@@ -42,18 +40,18 @@ const ChristmasPlaylist = () => {
                 height={380}
             />
 
-            <p className="text-3xl mt-8 mb-8 text-center text-sky-600 tracking-wider">
+            <p className="text-xl md:text-2xl lg:text-3xl mt-8 mb-8 text-center text-sky-600 tracking-wider">
                 Christmas Playlist
             </p>
 
-            <div className="lg:px-36">
-                <p className="text-xl mb-4">{state.selectedTitle}</p>
+            <div className="lg:mx-36">
+                <p className="text-md md:text-lg lg:text-xl mb-4">{state.selectedTitle}</p>
                 <ReactAudioPlayer className="w-full" src={`${state.selectedSong}`} autoPlay controls />
 
 
                 <ul className="w-50 mt-10 leading-10">
                     <li
-                        className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                        className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                         // onClick={() => { setSelectedSong("/Believer.mp3")
                         // setSelectedTitle("Believer - Imagine Dragons") }} >
                         onClick={() => {
@@ -67,7 +65,7 @@ const ChristmasPlaylist = () => {
 
 
                     <li
-                        className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                        className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                         onClick={() => {
                             dispatch({ type: "CurrentSong", payload: "Demons.mp3" })
                             dispatch({ type: "SongTitle", payload: "Demons - Imagine Dragons" })
@@ -78,7 +76,7 @@ const ChristmasPlaylist = () => {
 
 
                     <li
-                        className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                        className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg border-b-2 py-2 hover:text-sky-600"
                         onClick={() => {
                             dispatch({ type: "CurrentSong", payload: "It'sASin.mp3" })
                             dispatch({ type: "SongTitle", payload: "It's A Sin - Pet Shop Boys" })
@@ -89,7 +87,7 @@ const ChristmasPlaylist = () => {
 
 
                     <li
-                        className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                        className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                         onClick={() => {
                             dispatch({ type: "CurrentSong", payload: "Believer.mp3" })
                             dispatch({ type: "SongTitle", payload: "Believer - Imagine Dragons" })
@@ -101,7 +99,7 @@ const ChristmasPlaylist = () => {
 
 
                     <li
-                        className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                        className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                         onClick={() => {
                             dispatch({ type: "CurrentSong", payload: "Demons.mp3" })
                             dispatch({ type: "SongTitle", payload: "Demons - Imagine Dragons" })
@@ -112,7 +110,7 @@ const ChristmasPlaylist = () => {
 
 
                     <li
-                        className="cursor-pointer flex justify-between text-lg py-2 border-b-2 hover:text-sky-600"
+                        className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                         onClick={() => {
                             dispatch({ type: "CurrentSong", payload: "It'sASin.mp3" })
                             dispatch({ type: "SongTitle", payload: "It's A Sin - Pet Shop Boys" })

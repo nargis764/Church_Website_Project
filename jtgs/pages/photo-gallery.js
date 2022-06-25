@@ -12,13 +12,11 @@ const PhotoGallery = () => {
     const router = useRouter();
 
     return (
-        <div className="px-20 md:px-32 lg:px-44">
+        <div className="mx-20 md:mx-32 lg:mx-44">
             <div>
                 <Image
                     className=""
-                    src={imgURL}
-                    //loader function generates the URL for the image by appending a root domain to the provided source
-                    //apparently we don't need the loader function for locally stored images
+                    src={imgURL}                    
                     loader={() => imgURL}
                     alt=""
                     layout="responsive"
@@ -28,15 +26,13 @@ const PhotoGallery = () => {
                 />
             </div>
 
-            <p className="text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider">
+            <p className="text-xl md:text-2xl lg:text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider">
                 Photo Gallery
             </p>
 
-            <p className="text-lg mt-5 underline hover:text-teal-600">
+            <p className="text-sm md:text-md lg:text-lg mt-5 underline hover:text-teal-600">
                 <Link href="https://drive.google.com/drive/folders/1hvPEPop1xPxX2BFfWO_jFnY8J8a2zkke">Gallery</Link>
             </p>
-
-
 
 
         </div>

@@ -23,8 +23,6 @@ const FacilitySchedulingForm = () => {
         <Image
                     className=""
                     src={imgURL}
-                    //loader function generates the URL for the image by appending a root domain to the provided source
-                    //apparently we don't need the loader function for locally stored images
                     loader={() => imgURL}
                     alt=""
                     layout="responsive"
@@ -40,7 +38,7 @@ const FacilitySchedulingForm = () => {
 
             <p className="text-lg lg:px-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
-            <form className="lg:px-48">
+            <form className="lg:mx-48">
                 <div className="flex flex-col">
                     <label className="text-lg font-bold my-2">
                         Date
@@ -208,7 +206,7 @@ const FacilitySchedulingForm = () => {
                 />
 
                 <button
-                    className="mb-24 mt-10 text-lg text-white bg-black px-5 py-3 shadow-lg shadow-gray-400 rounded-lg hover:bg-gray-800"
+                    className="mb-24 mt-10 text-lg text-white bg-black px-5 py-3 shadow-lg shadow-gray-400 rounded-lg hover:bg-gray-800 ease-in"
                     onClick={ handleClick }>
                     Submit
                 </button>

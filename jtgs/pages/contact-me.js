@@ -18,9 +18,7 @@ const ContactForm = () => {
             <div>
         <Image
                     className=""
-                    src={imgURL}
-                    //loader function generates the URL for the image by appending a root domain to the provided source
-                    //apparently we don't need the loader function for locally stored images
+                    src={imgURL}                    
                     loader={() => imgURL}
                     alt=""
                     layout="responsive"
@@ -32,7 +30,7 @@ const ContactForm = () => {
 
             <p className="mb-4 mt-8 text-3xl text-sky-600 text-center">Contact Me</p>
 
-            <p className="text-lg lg:px-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
+            <p className="text-lg lg:mx-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
             <form className="lg:px-48">
             <div className="flex flex-col py-4">

@@ -16,7 +16,7 @@ const ParishRegistrationForm = () => {
     }
     
 return (
-    <div className="">
+    <div className="mx-20 lg:mx-44">
 
         <Image
                 className=""
@@ -33,17 +33,17 @@ return (
             />
 
 
-        <p className="text-3xl mt-8 mb-8 text-sky-600 tracking-wider text-center lg:mx-44">
+        <p className="text-xl md:text-2xl lg:text-3xl lg:text-3xl mt-8 mb-8 text-sky-600 tracking-wider text-center lg:mx-44">
             Parish Online Registration Form (Complete One Form For Each Person)
         </p>
 
-        <div className="px-20 lg:px-44">
+        
             <p className="text-lg lg:px-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
 
-        <form className="lg:px-48">
+        <form className="sm:text-sm md:text-md lg:text-lg lg:mx-48">
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold pb-2">
                     Last Name <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -52,7 +52,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     First Name <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -61,7 +61,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     Address <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -70,7 +70,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     City <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -79,7 +79,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     US States <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -141,7 +141,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     Zip <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -150,7 +150,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold ,b-2">
                     Date <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -159,7 +159,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     Email
                 </label>
 
@@ -168,7 +168,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     2nd Email
                 </label>
 
@@ -177,7 +177,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     Telephone <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -186,7 +186,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     2nd Telephone
                 </label>
 
@@ -195,7 +195,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     Birth Date <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -204,7 +204,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     Religion <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -213,7 +213,7 @@ return (
 
 
             <div className="flex flex-col py-4">
-                <label className="text-lg font-bold pb-2">
+                <label className="font-bold mb-2">
                     Marital Status <span className="text-red-600"> &#42; </span>
                 </label>
 
@@ -228,7 +228,7 @@ return (
 
 
             <div className="flex flex-col py-4 text-lg">
-                <label className="font-bold pb-2">
+                <label className="font-bold mb-2">
                     Sacraments
                 </label>
 
@@ -262,15 +262,15 @@ return (
 
             <div className="flex flex-col justify-between lg:flex-row ">
                 <div className="flex flex-col space-y-2">
-                <label className="text-lg font-bold ">
+                <label className="font-bold ">
                     Office Use Only (Received)
                 </label>
 
                 <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
-                <div className="flex flex-col space-y-2">
-                <label className="text-lg font-bold ">
+                <div className="flex flex-col space-y-2 mt-2">
+                <label className="font-bold ">
                     Parish SOFT
                 </label>
 
@@ -278,7 +278,7 @@ return (
                 </div>
 
                 <div className="flex flex-col space-y-2">
-                <label className="text-lg font-bold ">
+                <label className="font-bold mt-2">
                     OSV
                 </label>
 
@@ -290,7 +290,7 @@ return (
 
 
 
-            <p className="text-lg font-bold py-4">
+            <p className="font-bold my-4">
                 Recaptcha
             </p>
 
@@ -306,7 +306,6 @@ return (
             </button>
         </form>
 
-        </div>
 
         
     </div>

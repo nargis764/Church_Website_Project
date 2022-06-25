@@ -7,8 +7,8 @@ const Ministries = () => {
 
     
     return (
-        <div className="px-20 lg:px-48">
-            <p className="text-4xl mt-8 text-sky-600">
+        <div className="mx-20 lg:mx-48">
+            <p className="text-xl md:text-2xl lg:text-3xl mt-8 text-sky-600">
                 Ministries
             </p>
 

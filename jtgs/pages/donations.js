@@ -10,7 +10,7 @@ const Donations = () => {
 
 
     return (
-        <div className="px-20 md:px-32 lg:px-44">
+        <div className="mx-20 md:mx-32 lg:mx-44">
             <div>
                 <Image
                     className=""
@@ -26,15 +26,15 @@ const Donations = () => {
                 />
             </div>
 
-            <p className="text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider">
+            <p className="text-xl md:text-2xl lg:text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider">
                 Donations
             </p>
 
-            <p className="text-xl mt-5 underline text-center hover:text-teal-600">
+            <p className="text-md md:text-lg lg:text-xl mt-5 underline text-center hover:text-teal-600">
                 <Link href="https://www.osvhub.com/jesusthegoodshepherd/sign_in?redirectUri=%2Fjesusthegoodshepherd%2Ffunds">Click Here to donate</Link>
             </p>
 
-            <p className="text-lg text-center mt-5">
+            <p className="text-sm md:text-md lg:text-lg text-center mt-5">
                 Thank You
             </p>
         </div>

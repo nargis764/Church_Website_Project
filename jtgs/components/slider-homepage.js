@@ -8,7 +8,6 @@ import Slider from "react-slick";
 
 
 
-
 const SliderHomepage = () => {
     const router = useRouter();
 
@@ -78,7 +77,7 @@ const SliderHomepage = () => {
 
     //     </div>
     // )
-    
+
 
 
     //Implementation-II (using react-slick library)
@@ -117,6 +116,7 @@ const SliderHomepage = () => {
                 >&#10095;</span>
             </div>
 
+
             <Slider {...settings} autoplay autoplaySpeed={5000} ref={sliderRef}>
                 {images.map((image, index) => {
                     return (
@@ -132,13 +132,13 @@ const SliderHomepage = () => {
                                 height={480}
                             />
 
-<div className="text-lg font-semibold text-gray-600 pl-5 ">
-                            <p className={image.method ? "hover:cursor-pointer" : "text-lg hover:cursor-default"}
-                                onClick={image.method}>
-                                {image.title}
-                            </p>
+                            <div className="text-lg font-semibold text-gray-600 pl-5 ">
+                                <p className={image.method? "hover:cursor-pointer" : "text-lg hover:cursor-default"}
+                                    onClick={image.method}>
+                                    {image.title}
+                                </p>
+                            </div>
                         </div>
-</div>
                     )
                 })}
             </Slider>

@@ -30,7 +30,7 @@ const LentenPlaylist = () => {
     const [state, dispatch] = useReducer(reducer, { selectedSong:"", selectedTitle:""})
 
     return (
-        <div className="px-20 lg:px-44">
+        <div className="mx-20 lg:mx-44">
             <Image
                 className=""
                 src={imgURL}
@@ -45,18 +45,18 @@ const LentenPlaylist = () => {
                 height={380}
             />
 
-            <p className="text-3xl mt-8 mb-8 text-center text-sky-600 tracking-wider">
+            <p className="text-xl md:text-2xl lg:text-3xl mt-8 mb-8 text-center text-sky-600 tracking-wider">
                 Lenten Playlist
             </p>
 
-            <div className="lg:px-36">
-                <p className="text-xl mb-4">{state.selectedTitle}</p>
+            <div className="lg:mx-36">
+                <p className="text-md md:text-lg lg:text-xl mb-4">{state.selectedTitle}</p>
             <ReactAudioPlayer className="w-full" src={`${state.selectedSong}`} autoPlay controls />
 
 
             <ul className="w-50 mt-10 leading-10">
                 <li
-                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     // onClick={() => { setSelectedSong("/Believer.mp3")
                     // setSelectedTitle("Believer - Imagine Dragons") }}
                     onClick={() => { dispatch({type:"CurrentSong", payload:"Believer.mp3"})
@@ -68,7 +68,7 @@ const LentenPlaylist = () => {
 
 
                 <li
-                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"Demons.mp3"})
                     dispatch({type:"SongTitle", payload:"Demons - Imagine Dragons"}) }}>
                     <p>2. Demons - Imagine Dragons </p>
@@ -77,7 +77,7 @@ const LentenPlaylist = () => {
 
 
                 <li
-                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"It'sASin.mp3"})
                     dispatch({type:"SongTitle", payload:"It's A Sin - Pet Shop Boys"}) }}>    
                     <p>3. It&#34;s A Sin - Pet Shop Boys</p>
@@ -86,7 +86,7 @@ const LentenPlaylist = () => {
 
 
                 <li
-                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"Believer.mp3"})
                     dispatch({type:"SongTitle", payload:"Believer - Imagine Dragons"}) }}>    
                     <p>4. Believer - Imagine Dragons</p>
@@ -96,7 +96,7 @@ const LentenPlaylist = () => {
 
 
                 <li
-                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"Demons.mp3"})
                     dispatch({type:"SongTitle", payload:"Demons - Imagine Dragons"}) }}>    
                     <p>5. Demons - Imagine Dragons </p>
@@ -105,7 +105,7 @@ const LentenPlaylist = () => {
 
 
                 <li
-                    className="cursor-pointer flex justify-between lg:text-lg py-2 border-b-2 hover:text-sky-600"
+                    className="cursor-pointer flex justify-between text-sm md:text-md lg:text-lg py-2 border-b-2 hover:text-sky-600"
                     onClick={() => { dispatch({type:"CurrentSong", payload:"It'sASin.mp3"})
                     dispatch({type:"SongTitle", payload:"It's A Sin - Pet Shop Boys"}) }}>      
                     <p>6. It&#34;s A Sin - Pet Shop Boys</p>
