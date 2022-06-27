@@ -89,7 +89,7 @@ const SliderHomepage = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 1000,
+        speed: 2000,
         slidesToShow: 1,
         arrows: true,
         slidesToScroll: 1
@@ -117,7 +117,7 @@ const SliderHomepage = () => {
             </div>
 
 
-            <Slider {...settings} autoplay autoplaySpeed={5000} ref={sliderRef}>
+            <Slider {...settings} autoplay autoplaySpeed={7000} ref={sliderRef}>
                 {images.map((image, index) => {
                     return (
                         <div className="" key={index}>
@@ -129,11 +129,11 @@ const SliderHomepage = () => {
                                 layout="responsive"
                                 objectFit="cover"
                                 width={1250}
-                                height={480}
+                                height={500}
                             />
 
-                            <div className="text-lg font-semibold text-gray-600 pl-5 ">
-                                <p className={image.method? "hover:cursor-pointer" : "text-lg hover:cursor-default"}
+                            <div className="text-sm md:text-md lg:text-lg font-semibold text-gray-600 pl-5 ">
+                                <p className={image.method? "hover:cursor-pointer" : "hover:cursor-default"}
                                     onClick={image.method}>
                                     {image.title}
                                 </p>

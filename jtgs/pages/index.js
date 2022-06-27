@@ -56,7 +56,7 @@ export default function Home() {
           Edgewater Park and Riverside.</p>
       </div>
 
-      <div className="w-3/5 h-0.5 bg-gray-200 mx-auto"></div>
+      <div className="w-3/5 h-[1px] bg-[#C9D5D9] mx-auto"></div>
 
 
       {/* Slider Section */}
@@ -65,14 +65,15 @@ export default function Home() {
         <SliderHomepage />
       </div>
 
-      <div className="w-3/5 h-0.5 bg-gray-200 mx-auto"></div>
+      <div className="w-3/5 h-[1px] bg-[#C9D5D9] mx-auto"></div>
 
       {/* Grid Section */}
       <div className="mt-20 mb-20">
         <MiddleGrid />
       </div>
 
-      <div className="w-3/5 h-0.5 bg-gray-200 mx-auto"></div>
+      <div className="w-3/5 h-[1px] bg-[#C9D5D9] mx-auto"></div>
+    
 
       {/* Calendar Section */}
       

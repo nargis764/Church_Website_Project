@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faMapMarker, faPhone, faFax, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faPhone, faFax, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -14,7 +14,7 @@ const Footer = () => {
                     <li className="font-bold tracking-wider text-[#C0C0C0]">Address</li>
 
                     <li className="pt-2 text-white">
-                        <FontAwesomeIcon icon={faMapMarker}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
                         <span className="ml-2">805 Warren Street Beverly, NJ 08010</span>
                     </li>
 
