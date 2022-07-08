@@ -89,9 +89,10 @@ const SliderHomepage = () => {
     const settings = {
         dots: true,
         infinite: true,
+        
         speed: 2000,
         slidesToShow: 1,
-        arrows: true,
+        
         slidesToScroll: 1
     };
 
@@ -126,18 +127,31 @@ const SliderHomepage = () => {
                                 src={image.img}
                                 loader={() => image.img}
                                 alt=""
-                                layout="responsive"
+                                
                                 objectFit="cover"
                                 width={1250}
-                                height={500}
+                                height={600}
                             />
 
-                            <div className="text-sm md:text-md lg:text-lg font-semibold text-gray-600 pl-5 ">
-                                <p className={image.method? "hover:cursor-pointer" : "hover:cursor-default"}
-                                    onClick={image.method}>
-                                    {image.title}
-                                </p>
+
+                            <div className="flex justify-between">
+                                <span className="cursor-pointer text-green-100 text-3xl font-bold hover:text-green-300 select-none"
+                                    onClick={previousSlide}
+                                >&#10094;</span>
+
+                                <div className="text-sm md:text-md lg:text-lg font-semibold text-gray-600 pl-5 ">
+                                    <p className={image.method ? "hover:cursor-pointer" : "hover:cursor-default"}
+                                        onClick={image.method}>
+                                        {image.title}
+                                    </p>
+                                </div>
+
+                                <span className="cursor-pointer text-green-100 text-3xl font-bold hover:text-green-300 select-none"
+                                    onClick={nextSlide}
+                                >&#10095;</span>
                             </div>
+
+                            
                         </div>
                     )
                 })}

@@ -28,46 +28,46 @@ const ContactForm = () => {
                 />
             </div>  
 
-            <p className="mb-4 mt-8 text-3xl text-sky-600 text-center">Contact Me</p>
+            <p className="text-xl md:text-2xl lg:text-3xl lg:text-3xl mt-8 mb-8 text-red-800 font-semibold tracking-wider text-center">Contact Me</p>
 
             <p className="text-lg lg:mx-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
-            <form className="lg:px-48">
-            <div className="flex flex-col py-4">
+            <form className="lg:mx-48">
+            <div className="flex flex-col my-8">
                 <label className="text-lg font-bold pb-2">
                     Name <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2 shadow" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
-            <div className="flex flex-col py-4">
+            <div className="flex flex-col my-8">
                 <label className="text-lg font-bold pb-2">
                     Phone
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2 shadow" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
 
-            <div className="flex flex-col py-4">
+            <div className="flex flex-col my-8">
                 <label className="text-lg font-bold pb-2">
                     Email <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <input type="text" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2 shadow" />
+                <input type="text" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
-            <div className="flex flex-col py-4">
+            <div className="flex flex-col my-8">
                 <label className="text-lg font-bold pb-2">
                     Message <span className="text-red-600"> &#42; </span>
                 </label>
 
-                <textarea type="text" rows="8" className="border border-stone-400 bg-gray-100 text-lg px-4 py-2 shadow" />
+                <textarea type="text" rows="8" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
             </div>
 
-            <p className="text-lg font-bold py-4">
+            <p className="text-lg font-bold my-8">
                 Recaptcha
             </p>
 
@@ -77,7 +77,7 @@ const ContactForm = () => {
             />
 
             <button 
-            className="mb-24 mt-6 text-lg text-white bg-black px-3 py-3 rounded hover:bg-gray-800"
+            className="mb-24 mt-10 text-lg text-white bg-black px-5 py-3 shadow-lg shadow-gray-400 rounded-lg hover:bg-gray-800 ease-in"
             onClick={ handleClick }>
                 Submit
             </button>

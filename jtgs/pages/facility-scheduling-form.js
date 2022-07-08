@@ -18,9 +18,9 @@ const FacilitySchedulingForm = () => {
 
 
     return (
-        <div className="mx-20 lg:mx-44">   
-        <div>
-        <Image
+        <div className="mx-20 lg:mx-44">
+            <div>
+                <Image
                     className=""
                     src={imgURL}
                     loader={() => imgURL}
@@ -30,13 +30,13 @@ const FacilitySchedulingForm = () => {
                     width={1250}
                     height={380}
                 />
-            </div>    
+            </div>
 
-            <p className="text-3xl mt-8 mb-8 text-sky-600 tracking-wider text-center lg:px-44">
+            <p className="text-3xl mt-8 mb-8 text-sky-600 tracking-wider text-center lg:mx-44">
                 Facility Scheduling Form
             </p>
 
-            <p className="text-lg lg:px-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
+            <p className="text-lg lg:mx-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
             <form className="lg:mx-48">
                 <div className="flex flex-col">
@@ -48,7 +48,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Contact Name <span className="text-red-600"> &#42; </span>
                     </label>
@@ -57,7 +57,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Sponsor Name (Organization) <span className="text-red-600"> &#42; </span>
                     </label>
@@ -66,7 +66,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Telephone <span className="text-red-600"> &#42; </span>
                     </label>
@@ -75,7 +75,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Email <span className="text-red-600"> &#42; </span>
                     </label>
@@ -84,7 +84,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Start Date and Start Time of Event <span className="text-red-600"> &#42; </span>
                     </label>
@@ -93,7 +93,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         End Date and End Time of Event <span className="text-red-600"> &#42; </span>
                     </label>
@@ -102,7 +102,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Type of Event (Describe)<span className="text-red-600"> &#42; </span>
                     </label>
@@ -111,7 +111,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Room Being Used (ex. Cafeteria)<span className="text-red-600"> &#42; </span>
                     </label>
@@ -120,7 +120,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Date Requested <span className="text-red-600"> &#42; </span>
                     </label>
@@ -129,7 +129,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Expected Number of Attendees <span className="text-red-600"> &#42; </span>
                     </label>
@@ -138,7 +138,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Set Up Before Event (Time) <span className="text-red-600"> &#42; </span>
                     </label>
@@ -147,7 +147,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Clean Up After Event (Time) <span className="text-red-600"> &#42; </span>
                     </label>
@@ -156,7 +156,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Special Instructions
                     </label>
@@ -165,7 +165,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Paragraph Text
                     </label>
@@ -177,7 +177,7 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col py-4">
+                <div className="flex flex-col my-8">
                     <label className="text-lg font-bold pb-2">
                         Paragraph Text
                     </label>
@@ -194,11 +194,11 @@ const FacilitySchedulingForm = () => {
                         Processed By: _______________________________________________________
                     </textarea>
                 </div>
-                
+
                 {/* might change it to HCaptcha */}
-                <p className="text-lg font-bold py-4">
-                        Recaptcha
-                    </p>
+                <p className="text-lg font-bold my-8">
+                    Recaptcha
+                </p>
 
                 <ReCAPTCHA
                     sitekey="process.env.RECAPTCHA_SITE_KEY"
@@ -207,7 +207,7 @@ const FacilitySchedulingForm = () => {
 
                 <button
                     className="mb-24 mt-10 text-lg text-white bg-black px-5 py-3 shadow-lg shadow-gray-400 rounded-lg hover:bg-gray-800 ease-in"
-                    onClick={ handleClick }>
+                    onClick={handleClick}>
                     Submit
                 </button>
             </form>
