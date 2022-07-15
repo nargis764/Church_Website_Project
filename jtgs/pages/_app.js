@@ -4,7 +4,10 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 import Layout from "../components/Layout";
+<<<<<<< HEAD
 import { GlobalProvider } from "../context/GlobalContext";
+=======
+>>>>>>> 1889ceeb18fa31f445570a84a9bf5e6315a7dd5b
 
 
 

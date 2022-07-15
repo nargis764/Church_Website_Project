@@ -10,6 +10,10 @@ import emailjs from '@emailjs/browser';
 
 const FacilitySchedulingForm = () => {
 
+    const onChange = (value) => {
+        console.log("Captcha value:", value);
+    }
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -55,9 +59,10 @@ const FacilitySchedulingForm = () => {
 
             <p className="text-lg lg:mx-48">Fields marked with an <span className="text-red-600"> &#42; </span> are required</p>
 
-            
+
 
             <form className="lg:mx-48" ref={form} onSubmit={sendEmail}>
+<<<<<<< HEAD
                 
                 <div className="flex flex-col">
                     <label className="text-lg font-bold my-2">
@@ -66,6 +71,9 @@ const FacilitySchedulingForm = () => {
 
                     <input type="date" name="date" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" placeholder="" />
                 </div>
+=======
+
+>>>>>>> 1889ceeb18fa31f445570a84a9bf5e6315a7dd5b
 
 
                 <div className="flex flex-col my-8">
@@ -75,6 +83,43 @@ const FacilitySchedulingForm = () => {
 
                     <input type="text" name="contact_name" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
+
+
+                {/* <div className="flex flex-col">
+                    <label className="text-lg font-bold my-2">
+                        Date
+                    </label>
+
+                    <input type="date" name="date" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" placeholder="" />
+                </div> */}
+
+                <div className="flex flex-col my-8">
+                    <label className="text-lg font-bold pb-2">
+                        Date Requested <span className="text-red-600"> &#42; </span>
+                    </label>
+
+                    <input type="date" name="date_requested" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
+                </div>
+
+                <div className="flex flex-col my-8">
+                    <label className="text-lg font-bold pb-2">
+                        Start Time of Event <span className="text-red-600"> &#42; </span>
+                    </label>
+
+                    {/* <input type="datetime-local" name="start_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" /> */}
+                    <input type="time" name="start_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
+                </div>
+
+
+                <div className="flex flex-col my-8">
+                    <label className="text-lg font-bold pb-2">
+                        End Time of Event <span className="text-red-600"> &#42; </span>
+                    </label>
+
+                    {/* <input type="datetime-local" name="end_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" /> */}
+                    <input type="time" name="end_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
+                </div>
+
 
 
                 <div className="flex flex-col my-8">
@@ -91,7 +136,7 @@ const FacilitySchedulingForm = () => {
                         Telephone <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" name="telephone" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
+                    <input type="tel" name="telephone" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -104,24 +149,6 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col my-8">
-                    <label className="text-lg font-bold pb-2">
-                        Start Date and Start Time of Event <span className="text-red-600"> &#42; </span>
-                    </label>
-
-                    {/* <input type="datetime-local" name="start_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" /> */}
-                    <input type="date" name="start_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
-                </div>
-
-
-                <div className="flex flex-col my-8">
-                    <label className="text-lg font-bold pb-2">
-                        End Date and End Time of Event <span className="text-red-600"> &#42; </span>
-                    </label>
-
-                    {/* <input type="datetime-local" name="end_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" /> */}
-                    <input type="date" name="end_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
-                </div>
 
 
                 <div className="flex flex-col my-8">
@@ -142,13 +169,6 @@ const FacilitySchedulingForm = () => {
                 </div>
 
 
-                <div className="flex flex-col my-8">
-                    <label className="text-lg font-bold pb-2">
-                        Date Requested <span className="text-red-600"> &#42; </span>
-                    </label>
-
-                    <input type="date" name="date_requested" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
-                </div>
 
 
                 <div className="flex flex-col my-8">
@@ -165,7 +185,7 @@ const FacilitySchedulingForm = () => {
                         Set Up Before Event (Time) <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="date" name="setup_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
+                    <input type="time" name="setup_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -174,7 +194,7 @@ const FacilitySchedulingForm = () => {
                         Clean Up After Event (Time) <span className="text-red-600"> &#42; </span>
                     </label>
 
-                    <input type="text" name="cleanup_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
+                    <input type="time" name="cleanup_time" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
 
@@ -194,7 +214,7 @@ const FacilitySchedulingForm = () => {
 
                     <textarea type="text"
                         rows="8"
-                        placeholder="**NOTE** NO alcoholic beverages permitted when children and minors  (21 years of age and younger) are present on the property during event."
+                        placeholder={"**NOTE** NO alcoholic beverages permitted when children and minors  (21 years of age and younger) are present on the property during event."}
                         className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" />
                 </div>
 
@@ -207,6 +227,7 @@ const FacilitySchedulingForm = () => {
                     <textarea
                         type="text"
                         rows="8"
+<<<<<<< HEAD
                         className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md whitespace-pre"
                         placeholder='FOR OFFICE USE ONLY
                         Date Received:____________________
@@ -216,6 +237,11 @@ const FacilitySchedulingForm = () => {
 
                         Processed By: _______________________________________________________'
                     />
+=======
+                        className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md"
+                        placeholder={"FOR OFFICE USE ONLY Date Received:____________________ Facility Scheduled? _________Yes    __________No Extra Parochial Insurance Received? ______Yes ______No ______N/A Processed By: _______________________________________________________"
+                        } />
+>>>>>>> 1889ceeb18fa31f445570a84a9bf5e6315a7dd5b
                 </div>
 
                 {/* might change it to HCaptcha */}
@@ -224,8 +250,9 @@ const FacilitySchedulingForm = () => {
                 </p>
 
                 <ReCAPTCHA
-                    sitekey="process.env.RECAPTCHA_SITE_KEY"
-                // onChange={onChange}
+                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+
+                    onChange={onChange}
                 />
 
                 {/* <button
@@ -234,12 +261,12 @@ const FacilitySchedulingForm = () => {
                     Submit
                 </button> */}
 
-                <input 
-                className="mb-24 mt-10 text-lg text-white bg-black 
+                <input
+                    className="mb-24 mt-10 text-lg text-white bg-black 
                 px-5 py-3 shadow-lg shadow-gray-400 rounded-lg 
                 hover:bg-gray-800 ease-in"
-                type="submit"
-                value="Send" />
+                    type="submit"
+                    value="Send" />
             </form>
 
         </div>
