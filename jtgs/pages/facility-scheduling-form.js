@@ -58,20 +58,7 @@ const FacilitySchedulingForm = () => {
             
 
             <form className="lg:mx-48" ref={form} onSubmit={sendEmail}>
-
-                <label>Name</label>
-                <input type="text" name="user_name" />
-
-                <label>Email</label>
-                <input type="email" name="user_email" />
-
-                <label>Message</label>
-                <textarea name="message" />
-
-
-
-
-
+                
                 <div className="flex flex-col">
                     <label className="text-lg font-bold my-2">
                         Date
@@ -220,14 +207,15 @@ const FacilitySchedulingForm = () => {
                     <textarea
                         type="text"
                         rows="8"
-                        className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md whitespace-pre">FOR OFFICE USE ONLY
+                        className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md whitespace-pre"
+                        placeholder='FOR OFFICE USE ONLY
                         Date Received:____________________
                         Facility Scheduled? _________Yes    __________No
 
                         Extra Parochial Insurance Received? ______Yes ______No ______N/A
 
-                        Processed By: _______________________________________________________
-                    </textarea>
+                        Processed By: _______________________________________________________'
+                    />
                 </div>
 
                 {/* might change it to HCaptcha */}
