@@ -13,6 +13,7 @@ const Card = ({ source, title, telephone, email }) => {
                                 <Image className="rounded mt-6 shadow text-center lg:px-32"
                                         src={source}
                                         loader={() => source}
+                                        unoptimized={true}
                                         alt=""
                                         objectFit="cover"
                                         width={320} height={240}

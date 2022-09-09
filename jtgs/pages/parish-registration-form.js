@@ -24,8 +24,8 @@ return (
                 //loader function generates the URL for the image by appending a root domain to the provided source
                 //apparently we don't need the loader function for locally stored images
                 loader={() => imgURL}
-                alt=""
-                // layout = "fill" 
+                unoptimized={true}
+                alt=""                
                 layout="responsive"
                 objectFit="cover"
                 width={1250}

@@ -16,6 +16,7 @@ const RCIA = () => {
                 src={imgURL}
                 loader={() => imgURL}
                 alt=""
+                unoptimized={true}
                 layout="responsive"
                 objectFit="cover"
                 width={1250}

@@ -28,7 +28,8 @@ const MassLivestream = () => {
                 className=""
                 src={imgURL}                
                 loader={() => imgURL}
-                alt=""                
+                alt=""          
+                unoptimized={true}      
                 layout="responsive"
                 objectFit="cover"
                 width={1250}

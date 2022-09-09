@@ -19,9 +19,9 @@ const Staff = () => {
             <Image
                 className=""
                 src={imgURL}                
-                loader={() => imgURL}
-                unoptimized={true}
-                alt=""               
+                loader={() => imgURL}                
+                alt=""  
+                unoptimized={true}             
                 layout="responsive"
                 objectFit="cover"
                 width={1250}
