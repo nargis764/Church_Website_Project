@@ -62,18 +62,6 @@ const FacilitySchedulingForm = () => {
 
 
             <form className="lg:mx-48" ref={form} onSubmit={sendEmail}>
-<<<<<<< HEAD
-                
-                <div className="flex flex-col">
-                    <label className="text-lg font-bold my-2">
-                        Date
-                    </label>
-
-                    <input type="date" name="date" className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md" placeholder="" />
-                </div>
-=======
-
->>>>>>> 1889ceeb18fa31f445570a84a9bf5e6315a7dd5b
 
 
                 <div className="flex flex-col my-8">
