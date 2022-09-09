@@ -28,12 +28,12 @@ const ParishHistory = () => {
                 Parish History
             </p>
 
-            <p className="text-lg lg:text-xl lg:text-2xl mt-5 text-sky-600">
-                Jesus, the Good Shepherd Parish History
+            <p className="text-lg lg:text-xl  mt-5 text-sky-600">
+                Jesus, the Good Shepherd Parish History                
             </p>
 
             <p className="text-sm md:text-md lg:text-lg mt-5 leading-8 lg:leading-10">
-                Established in 2008 through merger of the parishes of St. Peter in Riverside and St. Joseph in Beverly, this vibrant Catholic family of the Diocese of Trenton serves the communities of Beverly, Burlington Township, Delanco, Edgewater Park and Riverside.
+                Established in 2008 through merger of the parishes of St. Peter in Riverside and St. Joseph in Beverly, this vibrant Catholic family of the Diocese of Trenton serves the communities of Beverly, Burlington Township, Delanco, Edgewater Park and Riverside.             
             </p>
             
         </div>

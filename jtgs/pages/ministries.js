@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link"
+import moment from "moment";
 
 
 
@@ -20,7 +21,7 @@ const Ministries = () => {
 
             <p className="text-3xl mt-8 text-sky-600">
                 Ministry through Education
-            </p>
+            </p>            
 
             <p className="text-2xl mt-5 text-sky-600">
                 Religious Education Grades 1-8

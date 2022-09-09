@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { useRouter } from "next/router"
+import { motion } from "framer-motion"
 
 
 
@@ -33,7 +34,10 @@ const Sacraments = () => {
                     <div className="md:mr-10">
 
 
-                        <p className="text-lg lg:text-2xl mt-5 text-sky-600">
+                        <p className="text-lg lg:text-2xl mt-5 text-sky-600"
+                        initial = {{ y:-250 }}
+            animate = {{ y:-10 }}
+            transition = {{ delay:0.2 }}>
                             Sacrament of Baptism
                         </p>
 
@@ -149,7 +153,7 @@ const Sacraments = () => {
                     </div>
                 </div>
 
-                
+
                 <div className="w-3/5 h-[1px] bg-[#C9D5D9] mx-auto lg:my-16"></div>
 
 

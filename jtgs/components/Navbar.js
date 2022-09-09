@@ -173,54 +173,181 @@ const Navbar = () => {
 
         // </div>
 
-        <div className="w-full h-20 shadow-xl z-[100]">
-            <div className="flex justify-between items-center w-full h-full px-10 py-5 md:px-20 lg:px-28">
+        // <div className="w-full h-20 shadow-xl z-[100]">
+        //     <div className="flex justify-between items-center w-full h-full px-10 py-5 md:px-20 lg:px-28">
 
-                <Img src="/../public/logo.jpg" alt="/" width="50" height="50"/>
+        //         <Img src="/../public/logo.jpg" alt="/" width="50" height="50"/>
 
 
-                <ul className="hidden lg:flex justify-between flex-wrap gap-8 text-lg lg:w-[80%]">
-                    <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
-                        {/* <p onClick = {() => { setShowDropdownHome(!showDropdownHome) }}> */}
-                        <p
-                            className="tracking-wider hover:text-red-700"
-                            onClick={() => router.push("/")}>
-                            Home
-                        </p>
-                        {/* {showDropdownHome && <DropdownHome />}  */}
-                        {/* <div className = {showDropdownHome? "visible" : "hidden"}>
+        //         <ul className="hidden lg:flex justify-between flex-wrap gap-8 text-lg lg:w-[80%]">
+        //             <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
+        //                 {/* <p onClick = {() => { setShowDropdownHome(!showDropdownHome) }}> */}
+        //                 <p
+        //                     className="tracking-wider hover:text-red-700"
+        //                     onClick={() => router.push("/")}>
+        //                     Home
+        //                 </p>
+        //                 {/* {showDropdownHome && <DropdownHome />}  */}
+        //                 {/* <div className = {showDropdownHome? "visible" : "hidden"}>
+        //                 <DropdownHome />
+        //             </div>   */}
+        //                 <div className="hidden absolute z-10 group-hover:block transition-all">
+        //                     <DropdownHome />
+        //                 </div>
+        //             </li>
+
+
+
+        //             <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
+        //                 <p
+        //                     className="tracking-wider hover:text-red-700"
+        //                     onClick={() => { router.push("/ministries") }}>
+        //                     Ministries
+        //                 </p>
+        //                 <div className="hidden absolute z-10 group-hover:block">
+        //                     <DropdownMinistries />
+        //                 </div>
+        //             </li>
+
+
+
+        //             <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
+        //                 <p className="tracking-wider hover:text-red-700">Religious Education</p>
+        //                 <div className="hidden absolute z-10 group-hover:block">
+        //                     <DropdownRE />
+        //                 </div>
+        //             </li>
+
+
+
+        //             {/* <li className="font-bold text-lg text-gray-500 cursor-pointer">
+        //             <p onClick={() => { setShowDropdownForm(!showDropdownForm) }}>
+        //                 Forms
+        //             </p>
+        //             <div className={showDropdownForm ? "visible absolute z-10" : "hidden"}>
+        //                 <DropdownForm />
+        //             </div>
+        //         </li> */}
+
+
+
+        //             <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
+        //                 <p className="tracking-wider hover:text-red-700">Forms</p>
+        //                 <div className="hidden absolute z-10 group-hover:block">
+        //                     <DropdownForm />
+        //                 </div>
+        //             </li>
+
+
+
+        //             <li className="font-bold text-lg text-gray-500 cursor-pointer tracking-wider hover:text-red-700">
+        //                 <Link href="/donations">Donations</Link>
+        //             </li>
+
+
+
+        //             <li className="font-bold text-lg text-gray-500 cursor-pointer trracking-wide hover:text-red-700">
+        //                 <Link href="/photo-gallery">Photo Gallery </Link>
+        //             </li>
+
+        //             <li className="font-bold text-lg text-gray-500 cursor-pointer tracking-wider hover:text-red-700">
+        //                 <Link href="/mass-livestream">Mass-Livestream</Link>
+        //             </li>
+
+
+
+
+        //             <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
+        //                 {/* <p 
+        //             onMouseOver = {() => {setShowDropdownPlaylist(!showDropdownPlaylist)}}
+        //             onMouseOut = {() => {setShowDropdownPlaylist(false)}}>
+        //                 Playlists
+        //             </p> */}
+
+        //                 <p className="tracking-wider hover:text-red-700">Playlists</p>
+
+        //                 {/* <div className = {showDropdownPlaylist? "visible" : "hidden"}> */}
+        //                 <div className="hidden absolute z-10 group-hover:block right-0">
+        //                     <DropdownPlaylist />
+        //                 </div>
+        //             </li>
+
+        //         </ul>
+
+        //         <div className="relative lg:hidden">
+        //             <div className=""
+        //                 onClick={handleClick}>
+        //                 <FontAwesomeIcon
+        //                     // icon={state.showCloseIcon ? faTimes : faBars}
+        //                     icon={showCloseIcon ? faTimes : faBars}
+        //                     className="fas fa-Bars">
+        //                 </FontAwesomeIcon>
+        //             </div>
+
+        //             {/* <div className = {state.showDropdownNavbar? " block absolute z-10 right-0 max-w-sm ease-in duration-500" : "hidden"}>
+        //             <DropdownNavbar/>
+        //         </div> */}
+        //             {/* <div className={state.showDropdownNavbar ? "fixed left-0 top-0 w-full h-screen bg-black/70 z-10": "hidden"}> */}
+        //             {/* <div className={state.showDropdownNavbar ? "fixed right-10 top-10 z-10 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500" : "fixed right-[-100%] top-10 p-10 ease-in duration-500"}> */}
+        //                 <div className={showDropdownNavbar ? "fixed right-10 top-10 z-10 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500" : "fixed right-[-100%] top-10 p-10 ease-in duration-500"}>
+        //                 <DropdownNavbar />
+        //             </div>
+
+        //             {/* </div> */}
+
+        //         </div>
+
+        //     </div>
+
+
+
+
+
+
+        //     {/* <div className = "hidden lg:visible"> */}
+
+        //     {/* </div> */}
+
+
+
+        // </div>
+        <div className = "w-full h-20 shadow-xl z-[100]">
+            <div className="flex justify-around items-center w-full h-full px-10 py-5 lg:px-10">
+                <Img src="/../public/logo.jpg" alt="/" width="40" height="40"/>                
+
+                <ul className = "hidden lg:flex justify-between flex-wrap gap-8">
+                <li className="relative group font-semibold text-md text-gray-500 cursor-pointer">
+                    {/* <p onClick = {() => { setShowDropdownHome(!showDropdownHome) }}> */}
+                    <p 
+                    className="tracking-wider hover:text-red-700"
+                    onClick = {() => router.push("/")}>
+                        Home
+                    </p>
+                    {/* {showDropdownHome && <DropdownHome />}  */}
+                    {/* <div className = {showDropdownHome? "visible" : "hidden"}>
                         <DropdownHome />
                     </div>   */}
-                        <div className="hidden absolute z-10 group-hover:block transition-all">
-                            <DropdownHome />
-                        </div>
-                    </li>
+                    <div className="hidden absolute z-10 group-hover:block transition-all">
+                        <DropdownHome />
+                    </div>
+                </li>         
+                
+                <li className = "relative group font-semibold text-md text-gray-500 cursor-pointer">
+                    <p 
+                    className="tracking-wider hover:text-red-700"
+                    onClick={() => {router.push("/ministries")}}>Ministries</p>
+                    <div className = "hidden absolute z-10 group-hover:block">
+                        <DropdownMinistries />
+                    </div>
+                </li>
 
-
-
-                    <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
-                        <p
-                            className="tracking-wider hover:text-red-700"
-                            onClick={() => { router.push("/ministries") }}>
-                            Ministries
-                        </p>
-                        <div className="hidden absolute z-10 group-hover:block">
-                            <DropdownMinistries />
-                        </div>
-                    </li>
-
-
-
-                    <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
-                        <p className="tracking-wider hover:text-red-700">Religious Education</p>
-                        <div className="hidden absolute z-10 group-hover:block">
-                            <DropdownRE />
-                        </div>
-                    </li>
-
-
-
-                    {/* <li className="font-bold text-lg text-gray-500 cursor-pointer">
+                <li className = "relative group font-semibold text-md text-gray-500 cursor-pointer">
+                    <p className="tracking-wider hover:text-red-700">Religious Education</p>
+                    <div className = "hidden absolute z-10 group-hover:block">
+                        <DropdownRE />                        
+                    </div>
+                </li>
+                {/* <li className="font-bold text-lg text-gray-500 cursor-pointer">
                     <p onClick={() => { setShowDropdownForm(!showDropdownForm) }}>
                         Forms
                     </p>
@@ -228,59 +355,47 @@ const Navbar = () => {
                         <DropdownForm />
                     </div>
                 </li> */}
+                <li className = "relative group font-semibold text-md text-gray-500 cursor-pointer">
+                    <p className="tracking-wider hover:text-red-700">Forms</p>
+                    <div className="hidden absolute z-10 group-hover:block">
+                        <DropdownForm />
+                    </div>
+                </li>
 
+                <li className="font-semibold text-md text-gray-500 cursor-pointer tracking-wider hover:text-red-700">
+                    <Link href="/donations">Donations</Link>
+                </li>
 
+                <li className="font-semibold text-md text-gray-500 cursor-pointer tracking-wider hover:text-red-700">
+                    <Link href="/photo-gallery">Photo Gallery </Link>
+                </li>
 
-                    <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
-                        <p className="tracking-wider hover:text-red-700">Forms</p>
-                        <div className="hidden absolute z-10 group-hover:block">
-                            <DropdownForm />
-                        </div>
-                    </li>
-
-
-
-                    <li className="font-bold text-lg text-gray-500 cursor-pointer tracking-wider hover:text-red-700">
-                        <Link href="/donations">Donations</Link>
-                    </li>
-
-
-
-                    <li className="font-bold text-lg text-gray-500 cursor-pointer trracking-wide hover:text-red-700">
-                        <Link href="/photo-gallery">Photo Gallery </Link>
-                    </li>
-
-                    <li className="font-bold text-lg text-gray-500 cursor-pointer tracking-wider hover:text-red-700">
-                        <Link href="/mass-livestream">Mass-Livestream</Link>
-                    </li>
-
-
-
-
-                    <li className="relative group font-bold text-lg text-gray-500 cursor-pointer">
-                        {/* <p 
+                <li className="font-semibold text-md text-gray-500 cursor-pointer tracking-wider hover:text-red-700">
+                    <Link href="/mass-livestream">Mass-Livestream</Link>
+                </li>
+                
+                <li className = "relative group font-semibold text-md text-gray-500 cursor-pointer">
+                    {/* <p 
                     onMouseOver = {() => {setShowDropdownPlaylist(!showDropdownPlaylist)}}
                     onMouseOut = {() => {setShowDropdownPlaylist(false)}}>
                         Playlists
                     </p> */}
+                    <p className="tracking-wider hover:text-red-700">Playlists</p>
 
-                        <p className="tracking-wider hover:text-red-700">Playlists</p>
+                    {/* <div className = {showDropdownPlaylist? "visible" : "hidden"}> */}
+                    <div className="hidden absolute z-10 group-hover:block right-0">
+                        <DropdownPlaylist />
+                    </div>
+                </li>
 
-                        {/* <div className = {showDropdownPlaylist? "visible" : "hidden"}> */}
-                        <div className="hidden absolute z-10 group-hover:block right-0">
-                            <DropdownPlaylist />
-                        </div>
-                    </li>
+            </ul>
 
-                </ul>
-
-                <div className="relative lg:hidden">
-                    <div className=""
-                        onClick={handleClick}>
-                        <FontAwesomeIcon
-                            // icon={state.showCloseIcon ? faTimes : faBars}
-                            icon={showCloseIcon ? faTimes : faBars}
-                            className="fas fa-Bars">
+            <div className = "relative lg:hidden">
+                <div className = "bg-gray-300 opacity-70 px-2 py-0.5 rounded-md hover:bg-blue-800" 
+                onClick = { handleClick }>
+                <FontAwesomeIcon
+                    icon = {showCloseIcon? faTimes: faBars}
+                    className = "fas fa-times cursor-pointer">
                         </FontAwesomeIcon>
                     </div>
 
@@ -288,14 +403,13 @@ const Navbar = () => {
                     <DropdownNavbar/>
                 </div> */}
                     {/* <div className={state.showDropdownNavbar ? "fixed left-0 top-0 w-full h-screen bg-black/70 z-10": "hidden"}> */}
-                    {/* <div className={state.showDropdownNavbar ? "fixed right-10 top-10 z-10 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500" : "fixed right-[-100%] top-10 p-10 ease-in duration-500"}> */}
-                        <div className={showDropdownNavbar ? "fixed right-10 top-10 z-10 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500" : "fixed right-[-100%] top-10 p-10 ease-in duration-500"}>
+                    <div className={showDropdownNavbar ? "fixed right-10 top-10 z-10 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500" : "fixed right-[-100%] top-10 p-10 ease-in duration-500"}>
                         <DropdownNavbar />
                     </div>
 
                     {/* </div> */}
 
-                </div>
+            </div>
 
             </div>
 
@@ -307,7 +421,6 @@ const Navbar = () => {
             {/* <div className = "hidden lg:visible"> */}
 
             {/* </div> */}
-
 
 
         </div>

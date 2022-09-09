@@ -126,6 +126,7 @@ const SliderHomepage = () => {
                                 className=""
                                 src={image.img}
                                 loader={() => image.img}
+                                unoptimized={true}
                                 alt=""
                                 
                                 objectFit="cover"

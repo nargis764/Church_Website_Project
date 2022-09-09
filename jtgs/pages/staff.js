@@ -20,6 +20,7 @@ const Staff = () => {
                 className=""
                 src={imgURL}                
                 loader={() => imgURL}
+                unoptimized={true}
                 alt=""               
                 layout="responsive"
                 objectFit="cover"

@@ -19,6 +19,7 @@ const CatholicCharities = () => {
                 className=""
                 src={imgURL1}                
                 loader={() => imgURL1}
+                unoptimized={true}
                 alt=""
                 layout="responsive"
                 objectFit="cover"

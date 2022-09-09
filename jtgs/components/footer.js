@@ -8,7 +8,7 @@ import { faLocationDot, faPhone, faFax, faEnvelope } from '@fortawesome/free-sol
 const Footer = () => {
 
     return (
-        <div className="flex flex-col bg-gray-500 px-20 pb-10 pt-16 text-center text-white text-md bottom-0 mt-10 lg:flex-row justify-between lg:text-lg lg:text-left">
+        <div className="flex flex-col bg-gray-500 px-20 pb-10 pt-16 text-center text-white text-md bottom-0 mt-10 lg:flex-row justify-between lg:text-left">
             <div className="lg:ml-10">
                 <ul>
                     <li className="font-bold tracking-wider text-[#C0C0C0]">Address</li>
@@ -18,17 +18,17 @@ const Footer = () => {
                         <span className="ml-2">805 Warren Street Beverly, NJ 08010</span>
                     </li>
 
-                    <li>
+                    <li className="mt-1">
                         <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
                         <span className="ml-2">Telephone (856) 461-0100</span>
                     </li>
 
-                    <li>
+                    <li className="mt-1">
                         <FontAwesomeIcon icon={faFax}></FontAwesomeIcon>
                         <span className="ml-2">Fax (856) 764-6133</span>
                     </li>
 
-                    <li className="mb-5 hover:underline">
+                    <li className="mt-1 mb-5 hover:underline">
                         <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
                         <Link href={"mailto: info@jesusthegoodshepherd.org"}>
                             <a className="ml-2">info@jesusthegoodshepherd.org</a>
@@ -44,7 +44,7 @@ const Footer = () => {
                 {/* <p className = "w-1/2 border-b text-center">Office Hours</p> */}
                 <p className="font-bold tracking-wider text-[#C0C0C0]">Office Hours</p>
                 <p className="pt-2">Monday-Thursday • 9am-3pm</p>
-                <p className="mb-5">Friday-Sunday • closed</p>
+                <p className="mt-1 mb-5">Friday-Sunday • closed</p>
             </div>
 
 
@@ -61,13 +61,13 @@ const Footer = () => {
                         </Link>
                     </li>
 
-                    <li className="hover:underline">
+                    <li className="mt-1 hover:underline">
                         <Link href="/contact-me">
                             Contact Me
                         </Link>
                     </li>
 
-                    <li className="mb-5 hover:underline">
+                    <li className="mt-1 mb-5 hover:underline">
                         <Link href="https://www.jesusthegoodshepherd.org/wp-content/uploads/Our-Business-Patrons_20210815.pdf">
                             Patronize Our Bulletin Sponsors
                         </Link>
