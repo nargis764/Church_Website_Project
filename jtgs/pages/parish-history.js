@@ -24,7 +24,7 @@ const ParishHistory = () => {
                 height={380}
             />
 
-            <p className="text-2xl lg:text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider">
+            <p className="text-2xl lg:text-3xl py-10 pb-5 text-sky-600 text-center tracking-wider animate-fade-in-up">
                 Parish History
             </p>
 

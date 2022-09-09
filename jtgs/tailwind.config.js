@@ -30,7 +30,23 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+                'fade-in-up': {
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translate(0, 100%)'
+                    },
+                    '100%': {
+                        opacity: '1',
+                        transform: 'translate(0,0)'
+                    },
+                }
+            },
+            animation: {
+                'fade-in-up': 'fade-in-up 0.5s ease-in-out 100ms both'
+            }
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio')
