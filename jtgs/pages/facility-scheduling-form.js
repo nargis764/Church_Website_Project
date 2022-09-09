@@ -213,23 +213,13 @@ const FacilitySchedulingForm = () => {
                     </label>
 
                     <textarea
-                        type="text"
-                        rows="8"
-<<<<<<< HEAD
-                        className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md whitespace-pre"
-                        placeholder='FOR OFFICE USE ONLY
-                        Date Received:____________________
-                        Facility Scheduled? _________Yes    __________No
+                            type="text"
+                            rows="8"
+                            className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md"
+                            placeholder={"FOR OFFICE USE ONLY Date Received:____________________ Facility Scheduled? _________Yes    __________No Extra Parochial Insurance Received? ______Yes ______No ______N/A Processed By: _______________________________________________________"
+                            } />
+                        
 
-                        Extra Parochial Insurance Received? ______Yes ______No ______N/A
-
-                        Processed By: _______________________________________________________'
-                    />
-=======
-                        className="border border-stone-300 bg-gray-100 rounded-lg text-lg px-4 py-2 shadow-md"
-                        placeholder={"FOR OFFICE USE ONLY Date Received:____________________ Facility Scheduled? _________Yes    __________No Extra Parochial Insurance Received? ______Yes ______No ______N/A Processed By: _______________________________________________________"
-                        } />
->>>>>>> 1889ceeb18fa31f445570a84a9bf5e6315a7dd5b
                 </div>
 
                 {/* might change it to HCaptcha */}
