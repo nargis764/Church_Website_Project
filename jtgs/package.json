@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
+    
+    "start":"node_modules/next/dist/bin/next start -p $PORT",
     "lint": "next lint",
     "export": "next export"
-  },
+  }, 
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
